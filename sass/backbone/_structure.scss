@@ -62,10 +62,6 @@ aside{
   .no-sidebar{
     .main{
       @include span-columns(12 ,12)
-   }
-}
-.header_left {@include span-columns(12,12);}
-.header_right {@include span-columns(12 ,12);}
-.socialbuttons {@include span-columns(12 ,12);}
-footer{@include span-columns(12 ,12);}
+    }
+  }
 }
