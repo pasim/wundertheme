@@ -5,47 +5,46 @@
 //page--[CONTENT TYPE].tpl.php
 ?>
 <!--page.tpl.php-->
-<header role="banner">
-  <div class="container">
-    <?php if ($logo): ?>
-      <figure class="logo">
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
-        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-      </a>
-      </figure>
-    <?php endif; ?>
-
-    <?php if($site_name OR $site_slogan ): ?>
-    <hgroup>
-      <?php if($site_name): ?>
-      <h1><?php print $site_name; ?></h1>
+<div class="page">
+  <header role="banner">
+    <div class="container">
+      <?php if ($logo): ?>
+        <figure class="logo">
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+        </a>
+        </figure>
       <?php endif; ?>
-      <?php if ($site_slogan): ?>
-        <h2><?php print $site_slogan; ?></h2>
-      <?php endif; ?>
-    </hgroup>
-    <?php endif; ?>
-  </div>
 
-  <?php if ($page['header']): ?>
-    <div class="header">
-      <div class="container">
-      <?php print render($page['header']); ?>
-      </div>
+      <?php if($site_name OR $site_slogan ): ?>
+      <hgroup>
+        <?php if($site_name): ?>
+        <h1><?php print $site_name; ?></h1>
+        <?php endif; ?>
+        <?php if ($site_slogan): ?>
+          <h2><?php print $site_slogan; ?></h2>
+        <?php endif; ?>
+      </hgroup>
+      <?php endif; ?>
     </div>
-  <?php endif; ?>
 
-</header>
+    <?php if ($page['header']): ?>
+      <div class="header">
+        <div class="container">
+        <?php print render($page['header']); ?>
+        </div>
+      </div>
+    <?php endif; ?>
 
-<div class="container">
-  <div class="row">
+  </header>
+
   <?php if ($page['sidebar_first']): ?>
-    <div class="sidebar-one span3" role="complementary">
+  <aside role="complementary" class="sidebar sidebar_first">
     <?php print render($page['sidebar_first']); ?>
-    </div>  <!-- /#sidebar-first -->
+  </aside>
   <?php endif; ?>
 
-  <div role="main" class="<?php print _panama_content_span($columns); ?>">
+  <div role="main" class="main">
     <?php print render($title_prefix); ?>
     <?php if ($title): ?>
       <h1><?php print $title; ?></h1>
@@ -69,26 +68,22 @@
       </div>
     <?php } ?>
 
-
-    <?php print render($page['content_pre']); ?>
-
-    <?php print render($page['content']); ?>
-
-    <?php print render($page['content_post']); ?>
+    <div id="content">
+      <?php print render($page['content']); ?>
+    </div>
 
   </div><!--/main-->
 
   <?php if ($page['sidebar_second']): ?>
-    <div class="sidebar-two span3"role="complementary">
-      <?php print render($page['sidebar_second']); ?>
-    </div>
+  <aside role="complementary" class="sidebar sidebar_second">
+    <?php print render($page['sidebar_second']); ?>
+  </aside>
   <?php endif; ?>
-  </div>
-</div><!--/container-->
 
-<footer role="contentinfo">
-  <?php print render($page['footer']); ?>
-</footer>
+  <footer role="contentinfo">
+    <?php print render($page['footer']); ?>
+  </footer>
+</div>
 
 
 

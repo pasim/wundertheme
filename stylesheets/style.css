@@ -10,3 +10,117 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* line 19, ../sass/backbone/_structure.scss */
+.page {
+  *zoom: 1;
+  max-width: 83em;
+  _width: 83em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+/* line 38, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 22, ../sass/backbone/_structure.scss */
+header, footer, .main {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 25, ../sass/backbone/_structure.scss */
+aside {
+  display: none;
+}
+
+@media (min-width: 35em) {
+  /* line 30, ../sass/backbone/_structure.scss */
+  aside {
+    display: block;
+  }
+
+  /* line 35, ../sass/backbone/_structure.scss */
+  .one-sidebar.sidebar-first .main {
+    width: 74.6988%;
+    float: right;
+    margin-right: 0;
+  }
+  /* line 38, ../sass/backbone/_structure.scss */
+  .one-sidebar.sidebar-first aside.sidebar_first {
+    width: 24.09639%;
+    float: left;
+    margin-right: 1.20482%;
+  }
+  /* line 43, ../sass/backbone/_structure.scss */
+  .one-sidebar.sidebar-second .main {
+    width: 74.6988%;
+    float: left;
+    margin-right: 1.20482%;
+  }
+  /* line 46, ../sass/backbone/_structure.scss */
+  .one-sidebar.sidebar-second aside.sidebar_first {
+    width: 24.09639%;
+    float: right;
+    margin-right: 0;
+  }
+
+  /* line 52, ../sass/backbone/_structure.scss */
+  .two-sidebar .main {
+    width: 49.39759%;
+    float: left;
+    margin-right: 1.20482%;
+  }
+  /* line 55, ../sass/backbone/_structure.scss */
+  .two-sidebar .sidebar_first {
+    width: 24.09639%;
+    float: left;
+    margin-right: 1.20482%;
+  }
+  /* line 58, ../sass/backbone/_structure.scss */
+  .two-sidebar .sidebar_second {
+    width: 24.09639%;
+    float: right;
+    margin-right: 0;
+  }
+
+  /* line 63, ../sass/backbone/_structure.scss */
+  .no-sidebar .main {
+    width: 100%;
+    float: left;
+    margin-right: 1.20482%;
+  }
+
+  /* line 67, ../sass/backbone/_structure.scss */
+  .header_left {
+    width: 100%;
+    float: left;
+    margin-right: 1.20482%;
+  }
+
+  /* line 68, ../sass/backbone/_structure.scss */
+  .header_right {
+    width: 100%;
+    float: left;
+    margin-right: 1.20482%;
+  }
+
+  /* line 69, ../sass/backbone/_structure.scss */
+  .socialbuttons {
+    width: 100%;
+    float: left;
+    margin-right: 1.20482%;
+  }
+
+  /* line 70, ../sass/backbone/_structure.scss */
+  footer {
+    width: 100%;
+    float: left;
+    margin-right: 1.20482%;
+  }
+}

@@ -7,3 +7,65 @@
 //
 // All styling, non box model properties go here
 ////////////////////////
+
+$total-columns  : 12;             // a 12-column grid
+$column-width   : 6em;            // each column is 4em wide
+$gutter-width   : 1em;            // 1em gutters between columns
+$grid-padding   : $gutter-width;  // grid-padding equal to gutters
+
+$breakpoint_1: 35em;
+$breakpoint_2: 55em;
+
+.page{
+  @include container;
+}
+header, footer, .main{
+  @include clearfix;
+}
+aside{
+  display: none;
+}
+
+@include at-breakpoint($breakpoint_1){
+  aside{
+    display: block
+  }
+  .one-sidebar{
+    &.sidebar-first{
+      .main{
+        @include span-columns(9 omega, 12)
+      }
+      aside.sidebar_first{
+        @include span-columns(3, 12)
+      }
+    }
+    &.sidebar-second{
+      .main{
+        @include span-columns(9, 12)
+      }
+      aside.sidebar_first{
+        @include span-columns(3 omega, 12)
+      }
+    }
+  }
+  .two-sidebar{
+    .main{
+      @include span-columns(6, 12)
+    }
+    .sidebar_first{
+      @include span-columns(3, 12)
+    }
+    .sidebar_second{
+      @include span-columns(3 omega, 12)
+    }
+  }
+  .no-sidebar{
+    .main{
+      @include span-columns(12 ,12)
+   }
+}
+.header_left {@include span-columns(12,12);}
+.header_right {@include span-columns(12 ,12);}
+.socialbuttons {@include span-columns(12 ,12);}
+footer{@include span-columns(12 ,12);}
+}
