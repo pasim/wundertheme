@@ -15,7 +15,7 @@ $breakpoint_2: 55em;
   @include container;
 }
 header, footer, .main{
-  @include clearfix;
+  @extend .clearfix;
 }
 aside{
   display: none;
