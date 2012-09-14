@@ -134,11 +134,6 @@
   box-sizing: $boxmodel;
 }
 
-// Uses box-sizing mixin, so must be defined here
-.input-block-level {
-  @include input-block-level();
-}
-
 // User select
 // For selecting text on the page
 @mixin user-select($select) {
