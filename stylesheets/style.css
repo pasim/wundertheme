@@ -1,31 +1,31 @@
-/* line 8, /Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_border-box.scss */
+/* line 8, ../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_border-box.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 4, /Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_fluid-media.scss */
+/* line 4, ../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_fluid-media.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 11, /Users/stevedejonghe/Projects/amoras/sass/backbone/global/_extendables.scss */
+/* line 11, ../sass/backbone/global/_extendables.scss */
 .clearfix, header, footer, .main {
   *zoom: 1;
 }
-/* line 14, /Users/stevedejonghe/Projects/amoras/sass/backbone/global/_extendables.scss */
+/* line 14, ../sass/backbone/global/_extendables.scss */
 .clearfix:before, header:before, footer:before, .main:before, .clearfix:after, header:after, footer:after, .main:after {
   display: table;
   content: "";
 }
-/* line 18, /Users/stevedejonghe/Projects/amoras/sass/backbone/global/_extendables.scss */
+/* line 18, ../sass/backbone/global/_extendables.scss */
 .clearfix:after, header:after, footer:after, .main:after {
   clear: both;
 }
 
-/* line 14, /Users/stevedejonghe/Projects/amoras/sass/backbone/_structure.scss */
+/* line 5, ../sass/backbone/_structure.scss */
 .page {
   *zoom: 1;
   max-width: 83em;
@@ -35,69 +35,69 @@ img {
   padding-left: 1em;
   padding-right: 1em;
 }
-/* line 38, /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .page:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 20, /Users/stevedejonghe/Projects/amoras/sass/backbone/_structure.scss */
+/* line 11, ../sass/backbone/_structure.scss */
 aside {
   display: none;
 }
 
 @media (min-width: 35em) {
-  /* line 25, /Users/stevedejonghe/Projects/amoras/sass/backbone/_structure.scss */
+  /* line 16, ../sass/backbone/_structure.scss */
   aside {
     display: block;
   }
 
-  /* line 30, /Users/stevedejonghe/Projects/amoras/sass/backbone/_structure.scss */
+  /* line 21, ../sass/backbone/_structure.scss */
   .one-sidebar.sidebar-first .main {
     width: 74.6988%;
     float: right;
     margin-right: 0;
   }
-  /* line 33, /Users/stevedejonghe/Projects/amoras/sass/backbone/_structure.scss */
+  /* line 24, ../sass/backbone/_structure.scss */
   .one-sidebar.sidebar-first aside.sidebar_first {
     width: 24.09639%;
     float: left;
     margin-right: 1.20482%;
   }
-  /* line 38, /Users/stevedejonghe/Projects/amoras/sass/backbone/_structure.scss */
+  /* line 29, ../sass/backbone/_structure.scss */
   .one-sidebar.sidebar-second .main {
     width: 74.6988%;
     float: left;
     margin-right: 1.20482%;
   }
-  /* line 41, /Users/stevedejonghe/Projects/amoras/sass/backbone/_structure.scss */
+  /* line 32, ../sass/backbone/_structure.scss */
   .one-sidebar.sidebar-second aside.sidebar_first {
     width: 24.09639%;
     float: right;
     margin-right: 0;
   }
 
-  /* line 47, /Users/stevedejonghe/Projects/amoras/sass/backbone/_structure.scss */
-  .two-sidebar .main {
+  /* line 38, ../sass/backbone/_structure.scss */
+  .two-sidebars .main {
     width: 49.39759%;
     float: left;
     margin-right: 1.20482%;
   }
-  /* line 50, /Users/stevedejonghe/Projects/amoras/sass/backbone/_structure.scss */
-  .two-sidebar .sidebar_first {
+  /* line 41, ../sass/backbone/_structure.scss */
+  .two-sidebars .sidebar_first {
     width: 24.09639%;
     float: left;
     margin-right: 1.20482%;
   }
-  /* line 53, /Users/stevedejonghe/Projects/amoras/sass/backbone/_structure.scss */
-  .two-sidebar .sidebar_second {
+  /* line 44, ../sass/backbone/_structure.scss */
+  .two-sidebars .sidebar_second {
     width: 24.09639%;
     float: right;
     margin-right: 0;
   }
 
-  /* line 58, /Users/stevedejonghe/Projects/amoras/sass/backbone/_structure.scss */
+  /* line 49, ../sass/backbone/_structure.scss */
   .no-sidebar .main {
     width: 100%;
     float: left;
