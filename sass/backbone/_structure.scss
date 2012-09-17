@@ -21,15 +21,17 @@ aside {
       .main {
         @include span-columns(9 omega, 12);
       }
-      aside.sidebar_first {
-        @include span-columns(3, 12);
-      }
     }
     &.sidebar-second {
       .main {
         @include span-columns(9, 12);
       }
-      aside.sidebar_first {
+    }
+    aside {
+      &.sidebar_first {
+        @include span-columns(3, 12);
+      }
+      &.sidebar_second {
         @include span-columns(3 omega, 12);
       }
     }

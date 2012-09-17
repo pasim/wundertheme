@@ -59,52 +59,52 @@ aside {
     float: right;
     margin-right: 0;
   }
-  /* line 24, ../sass/Backbone/_structure.scss */
-  .one-sidebar.sidebar-first aside.sidebar_first {
-    width: 24.09639%;
-    float: left;
-    margin-right: 1.20482%;
-  }
-  /* line 29, ../sass/Backbone/_structure.scss */
+  /* line 26, ../sass/Backbone/_structure.scss */
   .one-sidebar.sidebar-second .main {
     width: 74.6988%;
     float: left;
     margin-right: 1.20482%;
   }
-  /* line 32, ../sass/Backbone/_structure.scss */
-  .one-sidebar.sidebar-second aside.sidebar_first {
+  /* line 31, ../sass/Backbone/_structure.scss */
+  .one-sidebar aside.sidebar_first {
+    width: 24.09639%;
+    float: left;
+    margin-right: 1.20482%;
+  }
+  /* line 34, ../sass/Backbone/_structure.scss */
+  .one-sidebar aside.sidebar_second {
     width: 24.09639%;
     float: right;
     margin-right: 0;
   }
 
-  /* line 38, ../sass/Backbone/_structure.scss */
+  /* line 40, ../sass/Backbone/_structure.scss */
   .two-sidebars .main {
     width: 49.39759%;
     float: left;
     margin-right: 1.20482%;
   }
-  /* line 41, ../sass/Backbone/_structure.scss */
+  /* line 43, ../sass/Backbone/_structure.scss */
   .two-sidebars .sidebar_first {
     width: 24.09639%;
     float: left;
     margin-right: 1.20482%;
   }
-  /* line 44, ../sass/Backbone/_structure.scss */
+  /* line 46, ../sass/Backbone/_structure.scss */
   .two-sidebars .sidebar_second {
     width: 24.09639%;
     float: right;
     margin-right: 0;
   }
 
-  /* line 49, ../sass/Backbone/_structure.scss */
+  /* line 51, ../sass/Backbone/_structure.scss */
   .no-sidebar .main {
     width: 100%;
     float: left;
     margin-right: 1.20482%;
   }
 
-  /* line 53, ../sass/Backbone/_structure.scss */
+  /* line 55, ../sass/Backbone/_structure.scss */
   footer {
     clear: both;
   }
