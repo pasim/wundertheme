@@ -2,52 +2,52 @@
 // Structure
 //
 ////////////////////////
-.page{
+.page {
   @include container;
 }
-header, footer, .main{
+header, footer, .main {
   @extend .clearfix;
 }
-aside{
+aside {
   display: none;
 }
 
-@include at-breakpoint($breakpoint_1){
-  aside{
+@include at-breakpoint($breakpoint_1) {
+  aside {
     display: block
   }
-  .one-sidebar{
-    &.sidebar-first{
-      .main{
-        @include span-columns(9 omega, 12)
+  .one-sidebar {
+    &.sidebar-first {
+      .main {
+        @include span-columns(9 omega, 12);
       }
-      aside.sidebar_first{
-        @include span-columns(3, 12)
+      aside.sidebar_first {
+        @include span-columns(3, 12);
       }
     }
-    &.sidebar-second{
-      .main{
-        @include span-columns(9, 12)
+    &.sidebar-second {
+      .main {
+        @include span-columns(9, 12);
       }
-      aside.sidebar_first{
-        @include span-columns(3 omega, 12)
+      aside.sidebar_first {
+        @include span-columns(3 omega, 12);
       }
     }
   }
-  .two-sidebars{
-    .main{
-      @include span-columns(6, 12)
+  .two-sidebars {
+    .main {
+      @include span-columns(6, 12);
     }
-    .sidebar_first{
-      @include span-columns(3, 12)
+    .sidebar_first {
+      @include span-columns(3, 12);
     }
-    .sidebar_second{
-      @include span-columns(3 omega, 12)
+    .sidebar_second {
+      @include span-columns(3 omega, 12);
     }
   }
-  .no-sidebar{
-    .main{
-      @include span-columns(12 ,12)
+  .no-sidebar {
+    .main {
+      @include span-columns(12 ,12);
     }
   }
   footer {
