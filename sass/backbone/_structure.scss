@@ -50,4 +50,7 @@ aside{
       @include span-columns(12 ,12)
     }
   }
+  footer {
+    clear: both;
+  }
 }

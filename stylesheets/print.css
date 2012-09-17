@@ -103,4 +103,9 @@ aside {
     float: left;
     margin-right: 1.20482%;
   }
+
+  /* line 53, ../sass/Backbone/_structure.scss */
+  footer {
+    clear: both;
+  }
 }
