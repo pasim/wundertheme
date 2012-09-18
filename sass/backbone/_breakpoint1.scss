@@ -1,0 +1,47 @@
+////////////////////////
+// Breakpoint 1 (+ IE<9)
+////////////////////////
+@mixin breakpoint1() {
+  aside {
+    display: block
+  }
+  .one-sidebar {
+    &.sidebar-first {
+      .main {
+        @include span-columns(9 omega, 12);
+      }
+    }
+    &.sidebar-second {
+      .main {
+        @include span-columns(9, 12);
+      }
+    }
+    aside {
+      &.sidebar_first {
+        @include span-columns(3, 12);
+      }
+      &.sidebar_second {
+        @include span-columns(3 omega, 12);
+      }
+    }
+  }
+  .two-sidebars {
+    .main {
+      @include span-columns(6, 12);
+    }
+    .sidebar_first {
+      @include span-columns(3, 12);
+    }
+    .sidebar_second {
+      @include span-columns(3 omega, 12);
+    }
+  }
+  .no-sidebar {
+    .main {
+      @include span-columns(12 ,12);
+    }
+  }
+  footer {
+    clear: both;
+  }
+}
