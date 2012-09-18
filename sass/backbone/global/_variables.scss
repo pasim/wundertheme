@@ -13,3 +13,29 @@ $grid-padding   : $gutter-width;  // grid-padding equal to gutters (bumps it up 
 // Breakpoints
 $breakpoint_1: 35em; // ~560px on a 16px base font-size
 $breakpoint_2: 55em; // ~880px on a 16px base font-size
+
+// The base font size.
+$base-font-size: 16px !default;
+
+// The base line height determines the basic unit of vertical rhythm.
+$base-line-height: 24px !default;
+
+// The font sizes for h1-h6.
+$h1-font-size: 2    * $base-font-size !default;
+$h2-font-size: 1.5  * $base-font-size !default;
+$h3-font-size: 1.17 * $base-font-size !default;
+$h4-font-size: 1    * $base-font-size !default;
+$h5-font-size: 0.83 * $base-font-size !default;
+$h6-font-size: 0.75 * $base-font-size !default;
+
+// Setting this to false will result in smaller output, but no support for ie6 hacks.
+// $legacy-support-for-ie6: true;
+
+// Setting this to false will result in smaller output, but no support for ie7 hacks.
+// $legacy-support-for-ie7: true;
+
+// The default font family.
+$base-font-family: sans-serif !default;
+
+// The amount lists and blockquotes are indented.
+$indent-amount: 40px !default;
