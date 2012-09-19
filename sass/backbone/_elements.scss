@@ -10,4 +10,7 @@ ul {
       @extend %horizontal-menu;
     }
   }
+  ul {
+    margin: 0;
+  }
 }

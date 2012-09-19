@@ -401,6 +401,11 @@ table {
   font-size: 16px;
 }
 
+/* line 13, ../sass/Backbone/_elements.scss */
+ul ul {
+  margin: 0;
+}
+
 /* line 5, ../sass/Backbone/_structure.scss */
 .page {
   *zoom: 1;
@@ -474,13 +479,29 @@ aside {
   }
 
   /* line 40, ../sass/Backbone/_breakpoint1.scss */
-  .no-sidebar .main {
+  .no-sidebars .main {
     width: 100%;
+    float: right;
+    margin-right: 0;
+  }
+  /* line 43, ../sass/Backbone/_breakpoint1.scss */
+  .no-sidebars .main .panel-2col .inside {
+    margin: 0;
+  }
+  /* line 46, ../sass/Backbone/_breakpoint1.scss */
+  .no-sidebars .main .panel-2col .panel-col-first {
+    width: 66.26506%;
     float: left;
     margin-right: 1.20482%;
   }
+  /* line 49, ../sass/Backbone/_breakpoint1.scss */
+  .no-sidebars .main .panel-2col .panel-col-last {
+    width: 32.53012%;
+    float: right;
+    margin-right: 0;
+  }
 
-  /* line 44, ../sass/Backbone/_breakpoint1.scss */
+  /* line 55, ../sass/Backbone/_breakpoint1.scss */
   footer {
     clear: both;
   }
@@ -542,13 +563,33 @@ aside {
   display: inline;
 }
 /* line 40, ../sass/Backbone/_breakpoint1.scss */
-.lt-ie9 .no-sidebar .main {
+.lt-ie9 .no-sidebars .main {
   width: 100%;
+  float: right;
+  margin-right: 0;
+  #margin-left: -1em;
+  display: inline;
+}
+/* line 43, ../sass/Backbone/_breakpoint1.scss */
+.lt-ie9 .no-sidebars .main .panel-2col .inside {
+  margin: 0;
+}
+/* line 46, ../sass/Backbone/_breakpoint1.scss */
+.lt-ie9 .no-sidebars .main .panel-2col .panel-col-first {
+  width: 66.26506%;
   float: left;
   margin-right: 1.20482%;
   display: inline;
 }
-/* line 44, ../sass/Backbone/_breakpoint1.scss */
+/* line 49, ../sass/Backbone/_breakpoint1.scss */
+.lt-ie9 .no-sidebars .main .panel-2col .panel-col-last {
+  width: 32.53012%;
+  float: right;
+  margin-right: 0;
+  #margin-left: -1em;
+  display: inline;
+}
+/* line 55, ../sass/Backbone/_breakpoint1.scss */
 .lt-ie9 footer {
   clear: both;
 }
