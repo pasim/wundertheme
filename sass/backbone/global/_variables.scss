@@ -6,9 +6,9 @@
 
 // Grid system
 $total-columns  : 12;             // a 12-column grid
-$column-width   : 6em;            // each column is 6em wide (totals to ~1328px on a 16px base font size)
+$column-width   : 6em;            // each column is 6em wide
 $gutter-width   : 1em;            // 1em gutters between columns
-$grid-padding   : $gutter-width;  // grid-padding equal to gutters (bumps it up to 1360px)
+$grid-padding   : $gutter-width;  // grid-padding equal to gutters
 
 // Breakpoints
 $breakpoint_1: 35em; // ~560px on a 16px base font-size
