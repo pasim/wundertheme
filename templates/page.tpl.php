@@ -35,13 +35,18 @@
         </div>
       </div>
     <?php endif; ?>
-
   </header>
 
+  <?php if ($page['primary_navigation']): ?>
+    <nav class="primary_navigation">
+      <?php print render($page['primary_navigation']); ?>
+    </nav>
+  <?php endif; ?>
+
   <?php if ($page['sidebar_first']): ?>
-  <aside role="complementary" class="sidebar sidebar_first">
-    <?php print render($page['sidebar_first']); ?>
-  </aside>
+    <aside role="complementary" class="sidebar sidebar_first">
+      <?php print render($page['sidebar_first']); ?>
+    </aside>
   <?php endif; ?>
 
   <div role="main" class="main">

@@ -24,18 +24,18 @@
 ////////////////////////
 
 @import 'global/variables';
+@import 'colors';
 @import 'global/functions';
 @import 'global/mixins';
 @import 'global/normalize';
 @import 'global/extendables';
+@import 'global/utilities';
 
 ////////////////////////
 // backbone elements
 ////////////////////////
 
-@import 'breakpoint1';
+@import 'breakpoints';
 @import 'elements';
-@import 'colors';
 @import 'structure';
 @import 'typography';
-@import 'ie-lt9';
