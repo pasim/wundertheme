@@ -1,7 +1,5 @@
-////////////////////////
-// Breakpoint 1 (+ IE<9)
-////////////////////////
-@mixin breakpoint1() {
+
+@mixin breakpoint_1 {
   aside {
     display: block
   }

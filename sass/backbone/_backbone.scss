@@ -29,13 +29,11 @@
 @import 'global/mixins';
 @import 'global/normalize';
 @import 'global/extendables';
-@import 'global/utilities';
 
 ////////////////////////
 // backbone elements
 ////////////////////////
-
 @import 'breakpoints';
-@import 'elements';
 @import 'structure';
+@import 'elements';
 @import 'typography';

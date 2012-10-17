@@ -1,17 +1,7 @@
 <?php
-//kpr(get_defined_vars());
-//http://drupalcontrib.org/api/drupal/drupal--modules--node--node.tpl.php
-
-
-//tpl variations:
-//node--[CONTENT TYPE].tpl.php
-//node--view--[CONTENT TYPE].tpl.php
-
 if ($classes) {
   $classes = ' class="'. $classes . ' "';
 }
-hide($content['comments']);
-hide($content['links']);
 ?>
 
 <!--node-->

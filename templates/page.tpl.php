@@ -27,7 +27,6 @@
       </hgroup>
       <?php endif; ?>
     </div>
-
     <?php if ($page['header']): ?>
       <div class="header">
         <div class="container">

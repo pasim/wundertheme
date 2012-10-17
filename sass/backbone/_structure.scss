@@ -2,6 +2,7 @@
 // Structure
 //
 ////////////////////////
+
 .page {
   @include container;
 }
@@ -11,7 +12,9 @@ header, footer, .main {
 aside {
   display: none;
 }
-
 @include at-breakpoint($breakpoint_1) {
-  @include breakpoint1;
+  @include breakpoint_1;
+}
+.lt-ie9 {
+  @include breakpoint_1;
 }
