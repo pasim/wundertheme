@@ -178,11 +178,11 @@
 // --------------------------------------------------
 
 // Add an alphatransparency value to any background or border color (via Elyse Holladay)
-@mixin translucent-background($color: $white, $alpha: 1) {
+@mixin translucent-background($color: #FFF, $alpha: 1) {
   background-color: hsla(hue($color), saturation($color), lightness($color), $alpha);
 }
 
-@mixin translucent-border($color: $white, $alpha: 1) {
+@mixin translucent-border($color: #FFF, $alpha: 1) {
   border-color: hsla(hue($color), saturation($color), lightness($color), $alpha);
   @include background-clip(padding-box);
 }
@@ -259,6 +259,12 @@
 // Reset filters for IE
 @mixin gradient-reset-filter() {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+// IE rgba
+@mixin rgba-ie($color) {
+  background-color: $color;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($color)}', endColorstr='#{ie-hex-str($color)}', GradientType=0); // IE9 and down, gets no color-stop at all for proper fallback
 }
 
 

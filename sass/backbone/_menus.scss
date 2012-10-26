@@ -1,0 +1,30 @@
+.primary_navigation {
+  h2 {
+    display: none;
+  }
+  ul.menu {
+    @extend %horizontal-menu;
+    text-align: center;
+    li {
+      margin: 0;
+      padding: 0;
+      border-right: 1px solid $main-menu-border;
+      &:first-child {
+        border-left: 1px solid $main-menu-border;
+      }
+    }
+    a {
+      line-height: 35px;
+      height: 35px;
+      padding: 0 9px;
+      font-weight: bold;
+      color: #FFF;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 12px;
+      &:hover {
+        @include rgba-ie(rgba(0, 0, 0, .4));
+      }
+    }
+  }
+}

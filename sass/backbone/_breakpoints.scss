@@ -1,5 +1,9 @@
 
 @mixin breakpoint_1 {
+  .primary_navigation {
+    display: block;
+    background: #000 url('../images/nav-bg.png') 0 0 repeat-x;
+  }
   aside {
     display: block
   }
@@ -48,9 +52,33 @@
           @include span-columns(4 omega, 12);
         }
       }
+      .panel-3col-33-stacked {
+        .inside {
+          margin: 0;
+        }
+        .center-wrapper {
+          .panel-panel {
+            @include span-columns(4, 12);
+          }
+          .panel-col-last {
+            @include omega;
+          }
+        }
+      }
     }
   }
   footer {
     clear: both;
+  }
+}
+
+@mixin breakpoint_2 {
+  .primary_navigation {
+    ul.menu {
+      a {
+        font-size: 14px;
+        padding: 0 20px;
+      }
+    }
   }
 }

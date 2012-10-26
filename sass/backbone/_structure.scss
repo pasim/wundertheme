@@ -3,18 +3,27 @@
 //
 ////////////////////////
 
-.page {
+.container {
   @include container;
 }
 header, footer, .main {
   @extend .clearfix;
 }
-aside {
+aside,
+.primary_navigation {
   display: none;
 }
 @include at-breakpoint($breakpoint_1) {
   @include breakpoint_1;
 }
+@include at-breakpoint($breakpoint_2) {
+  @include breakpoint_2;
+}
 .lt-ie9 {
   @include breakpoint_1;
+  @include breakpoint_2;
+  .container {
+    min-width: 960px;
+    *width: 960px;
+  }
 }
