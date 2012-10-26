@@ -57,6 +57,22 @@
   -o-transition: $transition;
   transition: $transition;
 }
+// Transitions
+@mixin transition-property($transition) {
+  -webkit-transition-property: $transition;
+  -moz-transition-property: $transition;
+  -ms-transition-property: $transition;
+  -o-transition-property: $transition;
+  transition-property: $transition;
+}
+// Transitions
+@mixin transition-duration($transition) {
+  -webkit-transition-duration: $transition;
+  -moz-transition-duration: $transition;
+  -ms-transition-duration: $transition;
+  -o-transition-duration: $transition;
+  transition-duration: $transition;
+}
 
 // Transformations
 @mixin rotate($degrees) {
@@ -394,5 +410,20 @@
 @mixin neg-top-margin($map, $sprite) {
   $sprite-image: sprite-file($map, $sprite);
   margin-top: -#{image-height($sprite-image) / 2};
+}
+
+// A11Y-wise hiding
+// ------------------------
+@mixin element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+@mixin element-focusable {
+  &:active,
+  &:focus {
+    position: static !important;
+    clip: auto;
+  }
 }
 

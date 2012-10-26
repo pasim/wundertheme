@@ -1,0 +1,53 @@
+.logo {
+  text-align: center;
+  padding-top: 20px;
+}
+.site-name {
+  @include span-columns(6, 12);
+  h1 {
+    margin: 0;
+  }
+  a {
+    @include icons-small-sprite(home);
+    display: inline-block;
+    text-indent: -999em;
+    overflow: hidden;
+    width: icons-small-sprite-width(home);
+    vertical-align: top;
+  }
+  h1,
+  a {
+    height: icons-small-sprite-height(home);
+  }
+}
+.region-header {
+  @include span-columns(6 omega, 12);
+  .block-search {
+    text-align: right;
+    > div.content {
+      @include transition-property(width);
+      @include transition-duration(1s);
+      width: 0;
+      overflow: hidden;
+      position: absolute;
+      background: #FFF;
+      display: inline-block;
+      right: 0;
+      &.open {
+        width: 100%;
+      }
+      form {
+        padding-right: 20px;
+      }
+    }
+    &:after {
+      height: 20px;
+      width: 20px;
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      background: red;
+    }
+  }
+}

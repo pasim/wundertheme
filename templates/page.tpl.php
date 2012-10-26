@@ -17,9 +17,9 @@
       <?php endif; ?>
 
       <?php if($site_name OR $site_slogan ): ?>
-      <hgroup>
+      <hgroup class="site-name">
         <?php if($site_name): ?>
-        <h1><?php print $site_name; ?></h1>
+        <h1><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a></h1>
         <?php endif; ?>
         <?php if ($site_slogan): ?>
           <h2><?php print $site_slogan; ?></h2>

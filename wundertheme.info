@@ -17,8 +17,8 @@ regions[content] = Content
 regions[footer] = Footer
 
 ;-------------- CSS -------------
-stylesheets[all][] = 'stylesheets/style.css'
-stylesheets[print][] = 'stylesheets/print.css'
+stylesheets[all][] = stylesheets/style.css
+stylesheets[print][] = stylesheets/print.css
 
 ;-------------- js -------------
-
+scripts[] = js/scripts.js

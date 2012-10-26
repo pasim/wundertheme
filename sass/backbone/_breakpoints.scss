@@ -4,6 +4,9 @@
     display: block;
     background: #000 url('../images/nav-bg.png') 0 0 repeat-x;
   }
+  .site-name {
+    @include element-invisible;
+  }
   aside {
     display: block
   }
@@ -76,7 +79,7 @@
   .primary_navigation {
     ul.menu {
       a {
-        font-size: 14px;
+        font-size: $base-font-size;
         padding: 0 20px;
       }
     }
