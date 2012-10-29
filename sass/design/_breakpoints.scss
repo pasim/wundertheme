@@ -1,11 +1,50 @@
 
 @mixin breakpoint_1 {
+  .page {
+    padding-top: 100px;
+    > header {
+      @include rgba-ie(rgba(0, 0, 0, .6));
+      padding: 10px 0;
+    }
+    .header {
+      > .container {
+        position: relative;
+      }
+    }
+  }
   .primary_navigation {
     display: block;
     background: #000 url('../images/nav-bg.png') 0 0 repeat-x;
   }
   .site-name {
     @include element-invisible;
+  }
+  .region-header {
+    display: block;
+    width: auto;
+    float: none;
+    position: absolute;
+    right: 0;
+    top: -90px;
+    .block-search {
+      margin: 0;
+      text-align: left;
+      > .content {
+        width: auto;
+      }
+    }
+  }
+  .logo {
+    > a {
+      display: block;
+      background-image: $icons-large;
+      @include sprite-background-position($icons-large, logo);
+      @include sprite-dimensions($icons-large, logo);
+      margin: 0 auto;
+      img {
+        display: none;
+      }
+    }
   }
   aside {
     display: block

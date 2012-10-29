@@ -8,17 +8,18 @@
     margin: 0;
   }
   a {
-    @include icons-small-sprite(home);
+    @extend %icons-small;
+    @include sprite-background-position($icons-small, home);
+    @include sprite-dimensions($icons-small, home);
     display: inline-block;
     text-indent: -999em;
     overflow: hidden;
-    width: icons-small-sprite-width(home);
     vertical-align: top;
     margin-left: 5px;
   }
   h1,
   a {
-    height: icons-small-sprite-height(home);
+    height: image-height(sprite-file($icons-small, home));
   }
 }
 .region-header {
@@ -30,7 +31,7 @@
     .contextual-links-wrapper {
       display: none;
     }
-    > div.content {
+    > .content {
       @include transition-property(width);
       @include transition-duration(1s);
       width: 0;
@@ -41,7 +42,7 @@
       right: 0;
     }
     &.open {
-      > div.content {
+      > .content {
         width: 100%;
       }
       &:after {
@@ -76,11 +77,11 @@
       display: block;
       position: absolute;
       right: 5px;
-      @include icons-small-sprite(search);
-      width: icons-small-sprite-width(search);
-      height: icons-small-sprite-height(search);
       top: 7px;
       cursor: pointer;
+      @extend %icons-small;
+      @include sprite-background-position($icons-small, search);
+      @include sprite-dimensions($icons-small, search);
     }
   }
 }

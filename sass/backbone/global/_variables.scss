@@ -41,4 +41,5 @@ $base-font-family: Helvetica, Arial, sans-serif !default;
 $indent-amount: 40px !default;
 
 // Import sprite-able icons
-//$icons: sprite-map('icons/*.png', $position: 0%, $spacing: 40px);
+$icons-small: sprite-map('icons-small/*.png');
+$icons-large: sprite-map('icons-large/*.png');
