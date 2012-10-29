@@ -1,9 +1,9 @@
 .logo {
   text-align: center;
-  padding-top: 20px;
+  padding: 20px 0;
 }
 .site-name {
-  @include span-columns(6, 12);
+  @include span-columns(1, 12);
   h1 {
     margin: 0;
   }
@@ -14,6 +14,7 @@
     overflow: hidden;
     width: icons-small-sprite-width(home);
     vertical-align: top;
+    margin-left: 5px;
   }
   h1,
   a {
@@ -21,9 +22,14 @@
   }
 }
 .region-header {
-  @include span-columns(6 omega, 12);
+  @include span-columns(11 omega, 12);
   .block-search {
     text-align: right;
+    margin-top: -1.7em;
+    margin-left: 1em;
+    .contextual-links-wrapper {
+      display: none;
+    }
     > div.content {
       @include transition-property(width);
       @include transition-duration(1s);
@@ -33,21 +39,48 @@
       background: #FFF;
       display: inline-block;
       right: 0;
-      &.open {
+    }
+    &.open {
+      > div.content {
         width: 100%;
       }
-      form {
-        padding-right: 20px;
+      &:after {
+        pointer-events: none;
       }
     }
+    .form-item {
+      margin: 0;
+    }
+    .form-text {
+      width: 100%;
+      border: 1px solid $content-border;
+      padding: 0 30px 0 15px;
+      height: 34px;
+      line-height: 34px;
+      @include placeholder($text);
+    }
+    .form-actions{
+      margin: 0;
+      input {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 34px;
+        width: 34px;
+        opacity: 0;
+        cursor: pointer;
+      }
+    } 
     &:after {
-      height: 20px;
-      width: 20px;
       content: "";
       display: block;
       position: absolute;
-      right: 0;
-      background: red;
+      right: 5px;
+      @include icons-small-sprite(search);
+      width: icons-small-sprite-width(search);
+      height: icons-small-sprite-height(search);
+      top: 7px;
+      cursor: pointer;
     }
   }
 }

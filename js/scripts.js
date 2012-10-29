@@ -9,7 +9,7 @@
             $content = $this.children('.content'),
             hidden = $content.width() === 0;
         if (hidden) {
-          $content.addClass('open');
+          $this.addClass('open');
         }
       });
     }

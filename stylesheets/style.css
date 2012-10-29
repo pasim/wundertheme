@@ -48,14 +48,14 @@ audio:not([controls]) {
 
 /* line 54, ../sass/backbone/global/_normalize.scss */
 html {
-  font-size: 100%;
+  font-size: 87.5%;
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
   -ms-text-size-adjust: 100%;
   /* 2 */
   /* Establishes a vertical rhythm unit using $base-line-height. */
-  line-height: 1.5em;
+  line-height: 1.71429em;
 }
 
 /* line 67, ../sass/backbone/global/_normalize.scss */
@@ -64,7 +64,7 @@ button,
 input,
 select,
 textarea {
-  font-family: sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /* line 72, ../sass/backbone/global/_normalize.scss */
@@ -86,49 +86,49 @@ a:active {
 /* line 94, ../sass/backbone/global/_normalize.scss */
 h1 {
   font-size: 2em;
-  line-height: 1.5em;
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
+  line-height: 1.71429em;
+  margin-top: 0.85714em;
+  margin-bottom: 0.85714em;
 }
 
 /* line 103, ../sass/backbone/global/_normalize.scss */
 h2 {
   font-size: 1.5em;
-  line-height: 2em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  line-height: 2.28571em;
+  margin-top: 1.14286em;
+  margin-bottom: 1.14286em;
 }
 
 /* line 109, ../sass/backbone/global/_normalize.scss */
 h3 {
   font-size: 1.17em;
-  line-height: 1.28205em;
-  margin-top: 1.28205em;
-  margin-bottom: 1.28205em;
+  line-height: 1.4652em;
+  margin-top: 1.4652em;
+  margin-bottom: 1.4652em;
 }
 
 /* line 115, ../sass/backbone/global/_normalize.scss */
 h4 {
   font-size: 1em;
-  line-height: 1.5em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  line-height: 1.71429em;
+  margin-top: 1.71429em;
+  margin-bottom: 1.71429em;
 }
 
 /* line 121, ../sass/backbone/global/_normalize.scss */
 h5 {
   font-size: 0.83em;
-  line-height: 1.80723em;
-  margin-top: 1.80723em;
-  margin-bottom: 1.80723em;
+  line-height: 2.0654em;
+  margin-top: 2.0654em;
+  margin-bottom: 2.0654em;
 }
 
 /* line 127, ../sass/backbone/global/_normalize.scss */
 h6 {
   font-size: 0.75em;
-  line-height: 2em;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  line-height: 2.28571em;
+  margin-top: 2.28571em;
+  margin-bottom: 2.28571em;
 }
 
 /* line 134, ../sass/backbone/global/_normalize.scss */
@@ -144,7 +144,7 @@ strong {
 
 /* line 144, ../sass/backbone/global/_normalize.scss */
 blockquote {
-  margin: 1.5em 40px;
+  margin: 1.71429em 40px;
 }
 
 /* line 150, ../sass/backbone/global/_normalize.scss */
@@ -162,7 +162,7 @@ mark {
 p,
 pre {
   /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
-  margin: 1.5em 0;
+  margin: 1.71429em 0;
 }
 
 /* line 172, ../sass/backbone/global/_normalize.scss */
@@ -173,7 +173,7 @@ samp {
   font-family: monospace, serif;
   _font-family: 'courier new', monospace;
   font-size: 1em;
-  line-height: 1.5em;
+  line-height: 1.71429em;
 }
 
 /* line 181, ../sass/backbone/global/_normalize.scss */
@@ -224,7 +224,7 @@ dl,
 menu,
 ol,
 ul {
-  margin: 1.5em 0;
+  margin: 1.71429em 0;
 }
 
 /* line 232, ../sass/backbone/global/_normalize.scss */
@@ -272,17 +272,17 @@ fieldset {
   border-color: #c0c0c0;
   margin: 0 2px;
   border-top-style: solid;
-  border-top-width: 0.0625em;
-  padding-top: 0.4625em;
+  border-top-width: 0.07143em;
+  padding-top: 0.52857em;
   border-bottom-style: solid;
-  border-bottom-width: 0.0625em;
-  padding-bottom: 0.9125em;
+  border-bottom-width: 0.07143em;
+  padding-bottom: 1.04286em;
   border-left-style: solid;
-  border-left-width: 0.0625em;
-  padding-left: 0.875em;
+  border-left-width: 0.07143em;
+  padding-left: 1em;
   border-right-style: solid;
-  border-right-width: 0.0625em;
-  padding-right: 0.875em;
+  border-right-width: 0.07143em;
+  padding-right: 1em;
 }
 
 /* line 293, ../sass/backbone/global/_normalize.scss */
@@ -398,7 +398,7 @@ table {
 /* line 104, ../sass/backbone/global/_extendables.scss */
 .region-header ul.menu li, .primary_navigation ul.menu li {
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 /* line 13, ../sass/backbone/_elements.scss */
@@ -429,7 +429,7 @@ aside,
   display: none;
 }
 
-@media (min-width: 35em) {
+@media (min-width: 30.625em) {
   /* line 3, ../sass/backbone/_breakpoints.scss */
   .primary_navigation {
     display: block;
@@ -536,10 +536,10 @@ aside,
     clear: both;
   }
 }
-@media (min-width: 55em) {
+@media (min-width: 48.125em) {
   /* line 81, ../sass/backbone/_breakpoints.scss */
   .primary_navigation ul.menu a {
-    font-size: 16px;
+    font-size: 14px;
     padding: 0 20px;
   }
 }
@@ -662,7 +662,7 @@ aside,
 }
 /* line 81, ../sass/backbone/_breakpoints.scss */
 .lt-ie9 .primary_navigation ul.menu a {
-  font-size: 16px;
+  font-size: 14px;
   padding: 0 20px;
 }
 /* line 25, ../sass/backbone/_structure.scss */
@@ -671,20 +671,31 @@ aside,
   *width: 960px;
 }
 
-/* line 44, icons-small/*.png */
-.icons-small-sprite, .site-name a {
-  background: url('/sites/all/themes/wundertheme/images/icons-small-s621e8b49c9.png') no-repeat;
+/* line 9, ../sass/styleguide/_style-guide.scss */
+html,
+body,
+button,
+input,
+select {
+  color: #4e4c4c;
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* line 52, icons-small/*.png */
+.icons-small-sprite, .site-name a, .region-header .block-search:after {
+  background: url('/sites/all/themes/wundertheme/images/icons-small-se9ad3675fb.png') no-repeat;
 }
 
 /* line 1, ../sass/design/_header.scss */
 .logo {
   text-align: center;
-  padding-top: 20px;
+  padding: 20px 0;
 }
 
 /* line 5, ../sass/design/_header.scss */
 .site-name {
-  width: 48.8959%;
+  width: 6.30915%;
   float: left;
   margin-right: 2.2082%;
   display: inline;
@@ -695,32 +706,39 @@ aside,
 }
 /* line 10, ../sass/design/_header.scss */
 .site-name a {
-  background-position: 0 0;
+  background-position: 0 -18px;
   display: inline-block;
   text-indent: -999em;
   overflow: hidden;
   width: 22px;
   vertical-align: top;
+  margin-left: 5px;
 }
-/* line 19, ../sass/design/_header.scss */
+/* line 20, ../sass/design/_header.scss */
 .site-name h1,
 .site-name a {
   height: 20px;
 }
 
-/* line 23, ../sass/design/_header.scss */
+/* line 24, ../sass/design/_header.scss */
 .region-header {
-  width: 48.8959%;
+  width: 91.48265%;
   float: right;
   margin-right: 0;
   #margin-left: -1.4em;
   display: inline;
 }
-/* line 25, ../sass/design/_header.scss */
+/* line 26, ../sass/design/_header.scss */
 .region-header .block-search {
   text-align: right;
+  margin-top: -1.7em;
+  margin-left: 1em;
 }
-/* line 27, ../sass/design/_header.scss */
+/* line 30, ../sass/design/_header.scss */
+.region-header .block-search .contextual-links-wrapper {
+  display: none;
+}
+/* line 33, ../sass/design/_header.scss */
 .region-header .block-search > div.content {
   -webkit-transition-property: width;
   -moz-transition-property: width;
@@ -739,23 +757,63 @@ aside,
   display: inline-block;
   right: 0;
 }
-/* line 36, ../sass/design/_header.scss */
-.region-header .block-search > div.content.open {
+/* line 44, ../sass/design/_header.scss */
+.region-header .block-search.open > div.content {
   width: 100%;
 }
-/* line 39, ../sass/design/_header.scss */
-.region-header .block-search > div.content form {
-  padding-right: 20px;
+/* line 47, ../sass/design/_header.scss */
+.region-header .block-search.open:after {
+  pointer-events: none;
 }
-/* line 43, ../sass/design/_header.scss */
+/* line 51, ../sass/design/_header.scss */
+.region-header .block-search .form-item {
+  margin: 0;
+}
+/* line 54, ../sass/design/_header.scss */
+.region-header .block-search .form-text {
+  width: 100%;
+  border: 1px solid #c8c7c7;
+  padding: 0 30px 0 15px;
+  height: 34px;
+  line-height: 34px;
+}
+/* line 24, ../sass/backbone/global/_mixins.scss */
+.region-header .block-search .form-text :-moz-placeholder {
+  color: #4e4c4c;
+}
+/* line 27, ../sass/backbone/global/_mixins.scss */
+.region-header .block-search .form-text :-ms-input-placeholder {
+  color: #4e4c4c;
+}
+/* line 30, ../sass/backbone/global/_mixins.scss */
+.region-header .block-search .form-text ::-webkit-input-placeholder {
+  color: #4e4c4c;
+}
+/* line 62, ../sass/design/_header.scss */
+.region-header .block-search .form-actions {
+  margin: 0;
+}
+/* line 64, ../sass/design/_header.scss */
+.region-header .block-search .form-actions input {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 34px;
+  width: 34px;
+  opacity: 0;
+  cursor: pointer;
+}
+/* line 74, ../sass/design/_header.scss */
 .region-header .block-search:after {
-  height: 20px;
-  width: 20px;
   content: "";
   display: block;
   position: absolute;
-  right: 0;
-  background: red;
+  right: 5px;
+  background-position: 0 0;
+  width: 19px;
+  height: 18px;
+  top: 7px;
+  cursor: pointer;
 }
 
 /* line 2, ../sass/design/_menus.scss */

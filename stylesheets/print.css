@@ -48,14 +48,14 @@ audio:not([controls]) {
 
 /* line 54, ../sass/Backbone/global/_normalize.scss */
 html {
-  font-size: 100%;
+  font-size: 87.5%;
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
   -ms-text-size-adjust: 100%;
   /* 2 */
   /* Establishes a vertical rhythm unit using $base-line-height. */
-  line-height: 1.5em;
+  line-height: 1.71429em;
 }
 
 /* line 67, ../sass/Backbone/global/_normalize.scss */
@@ -64,7 +64,7 @@ button,
 input,
 select,
 textarea {
-  font-family: sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /* line 72, ../sass/Backbone/global/_normalize.scss */
@@ -86,49 +86,49 @@ a:active {
 /* line 94, ../sass/Backbone/global/_normalize.scss */
 h1 {
   font-size: 2em;
-  line-height: 1.5em;
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
+  line-height: 1.71429em;
+  margin-top: 0.85714em;
+  margin-bottom: 0.85714em;
 }
 
 /* line 103, ../sass/Backbone/global/_normalize.scss */
 h2 {
   font-size: 1.5em;
-  line-height: 2em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  line-height: 2.28571em;
+  margin-top: 1.14286em;
+  margin-bottom: 1.14286em;
 }
 
 /* line 109, ../sass/Backbone/global/_normalize.scss */
 h3 {
   font-size: 1.17em;
-  line-height: 1.28205em;
-  margin-top: 1.28205em;
-  margin-bottom: 1.28205em;
+  line-height: 1.4652em;
+  margin-top: 1.4652em;
+  margin-bottom: 1.4652em;
 }
 
 /* line 115, ../sass/Backbone/global/_normalize.scss */
 h4 {
   font-size: 1em;
-  line-height: 1.5em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  line-height: 1.71429em;
+  margin-top: 1.71429em;
+  margin-bottom: 1.71429em;
 }
 
 /* line 121, ../sass/Backbone/global/_normalize.scss */
 h5 {
   font-size: 0.83em;
-  line-height: 1.80723em;
-  margin-top: 1.80723em;
-  margin-bottom: 1.80723em;
+  line-height: 2.0654em;
+  margin-top: 2.0654em;
+  margin-bottom: 2.0654em;
 }
 
 /* line 127, ../sass/Backbone/global/_normalize.scss */
 h6 {
   font-size: 0.75em;
-  line-height: 2em;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  line-height: 2.28571em;
+  margin-top: 2.28571em;
+  margin-bottom: 2.28571em;
 }
 
 /* line 134, ../sass/Backbone/global/_normalize.scss */
@@ -144,7 +144,7 @@ strong {
 
 /* line 144, ../sass/Backbone/global/_normalize.scss */
 blockquote {
-  margin: 1.5em 40px;
+  margin: 1.71429em 40px;
 }
 
 /* line 150, ../sass/Backbone/global/_normalize.scss */
@@ -162,7 +162,7 @@ mark {
 p,
 pre {
   /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
-  margin: 1.5em 0;
+  margin: 1.71429em 0;
 }
 
 /* line 172, ../sass/Backbone/global/_normalize.scss */
@@ -173,7 +173,7 @@ samp {
   font-family: monospace, serif;
   _font-family: 'courier new', monospace;
   font-size: 1em;
-  line-height: 1.5em;
+  line-height: 1.71429em;
 }
 
 /* line 181, ../sass/Backbone/global/_normalize.scss */
@@ -224,7 +224,7 @@ dl,
 menu,
 ol,
 ul {
-  margin: 1.5em 0;
+  margin: 1.71429em 0;
 }
 
 /* line 232, ../sass/Backbone/global/_normalize.scss */
@@ -272,17 +272,17 @@ fieldset {
   border-color: #c0c0c0;
   margin: 0 2px;
   border-top-style: solid;
-  border-top-width: 0.0625em;
-  padding-top: 0.4625em;
+  border-top-width: 0.07143em;
+  padding-top: 0.52857em;
   border-bottom-style: solid;
-  border-bottom-width: 0.0625em;
-  padding-bottom: 0.9125em;
+  border-bottom-width: 0.07143em;
+  padding-bottom: 1.04286em;
   border-left-style: solid;
-  border-left-width: 0.0625em;
-  padding-left: 0.875em;
+  border-left-width: 0.07143em;
+  padding-left: 1em;
   border-right-style: solid;
-  border-right-width: 0.0625em;
-  padding-right: 0.875em;
+  border-right-width: 0.07143em;
+  padding-right: 1em;
 }
 
 /* line 293, ../sass/Backbone/global/_normalize.scss */
@@ -398,7 +398,7 @@ table {
 /* line 104, ../sass/Backbone/global/_extendables.scss */
 .region-header ul.menu li {
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 /* line 13, ../sass/Backbone/_elements.scss */
@@ -429,7 +429,7 @@ aside,
   display: none;
 }
 
-@media (min-width: 35em) {
+@media (min-width: 30.625em) {
   /* line 3, ../sass/Backbone/_breakpoints.scss */
   .primary_navigation {
     display: block;
@@ -536,10 +536,10 @@ aside,
     clear: both;
   }
 }
-@media (min-width: 55em) {
+@media (min-width: 48.125em) {
   /* line 81, ../sass/Backbone/_breakpoints.scss */
   .primary_navigation ul.menu a {
-    font-size: 16px;
+    font-size: 14px;
     padding: 0 20px;
   }
 }
@@ -662,7 +662,7 @@ aside,
 }
 /* line 81, ../sass/Backbone/_breakpoints.scss */
 .lt-ie9 .primary_navigation ul.menu a {
-  font-size: 16px;
+  font-size: 14px;
   padding: 0 20px;
 }
 /* line 25, ../sass/Backbone/_structure.scss */
