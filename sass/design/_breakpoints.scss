@@ -21,16 +21,38 @@
   }
   .region-header {
     display: block;
-    width: auto;
     float: none;
     position: absolute;
     right: 0;
     top: -90px;
+    width: 200px;
     .block-search {
       margin: 0;
       text-align: left;
+      &:after {
+        display: none;
+      }
       > .content {
         width: auto;
+        left: 0;
+      }
+      .form-type-textfield {
+        line-height: 18px;
+      }
+      .form-text {
+        height: 18px;
+        line-height: 18px;
+        border-color: $search-border;
+      }
+      .form-actions {
+        .form-submit {
+          border: none;
+          text-indent: -999em;
+          opacity: 1;
+          background-image: $icons-large;
+          @include sprite-background-position($icons-large, search);
+          @include sprite-dimensions($icons-large, search);
+        }
       }
     }
   }
