@@ -121,8 +121,27 @@
           margin: 0;
         }
         .center-wrapper {
+          @include cf;
           .panel-panel {
             @include span-columns(4, 12);
+          }
+          .panel-col-last {
+            @include omega;
+          }
+        }
+      }
+      .panel-3col-stacked {
+        .inside {
+          margin: 0;
+        }
+        .center-wrapper {
+          @include cf;
+          .panel-panel {
+            @include span-columns(6, 12);
+          }
+          .panel-col-first,
+          .panel-col-last {
+            @include span-columns(3, 12);
           }
           .panel-col-last {
             @include omega;

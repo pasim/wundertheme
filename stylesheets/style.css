@@ -773,25 +773,67 @@ select {
   .no-sidebars .main .panel-3col-33-stacked .inside {
     margin: 0;
   }
-  /* line 124, ../sass/design/_breakpoints.scss */
+  /* line 123, ../sass/design/_breakpoints.scss */
+  .no-sidebars .main .panel-3col-33-stacked .center-wrapper {
+    zoom: 1;
+  }
+  /* line 432, ../sass/backbone/global/_mixins.scss */
+  .no-sidebars .main .panel-3col-33-stacked .center-wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* line 125, ../sass/design/_breakpoints.scss */
   .no-sidebars .main .panel-3col-33-stacked .center-wrapper .panel-panel {
     width: 31.8612%;
     float: left;
     margin-right: 2.2082%;
   }
-  /* line 127, ../sass/design/_breakpoints.scss */
+  /* line 128, ../sass/design/_breakpoints.scss */
   .no-sidebars .main .panel-3col-33-stacked .center-wrapper .panel-col-last {
     float: right;
     margin-right: 0;
   }
-
   /* line 134, ../sass/design/_breakpoints.scss */
+  .no-sidebars .main .panel-3col-stacked .inside {
+    margin: 0;
+  }
+  /* line 137, ../sass/design/_breakpoints.scss */
+  .no-sidebars .main .panel-3col-stacked .center-wrapper {
+    zoom: 1;
+  }
+  /* line 432, ../sass/backbone/global/_mixins.scss */
+  .no-sidebars .main .panel-3col-stacked .center-wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* line 139, ../sass/design/_breakpoints.scss */
+  .no-sidebars .main .panel-3col-stacked .center-wrapper .panel-panel {
+    width: 48.8959%;
+    float: left;
+    margin-right: 2.2082%;
+  }
+  /* line 143, ../sass/design/_breakpoints.scss */
+  .no-sidebars .main .panel-3col-stacked .center-wrapper .panel-col-first,
+  .no-sidebars .main .panel-3col-stacked .center-wrapper .panel-col-last {
+    width: 23.34385%;
+    float: left;
+    margin-right: 2.2082%;
+  }
+  /* line 146, ../sass/design/_breakpoints.scss */
+  .no-sidebars .main .panel-3col-stacked .center-wrapper .panel-col-last {
+    float: right;
+    margin-right: 0;
+  }
+
+  /* line 153, ../sass/design/_breakpoints.scss */
   footer {
     clear: both;
   }
 }
 @media (min-width: 48.125em) {
-  /* line 142, ../sass/design/_breakpoints.scss */
+  /* line 161, ../sass/design/_breakpoints.scss */
   .primary_navigation ul.menu a {
     font-size: 14px;
     padding: 0 20px;
@@ -966,14 +1008,24 @@ select {
 .lt-ie9 .no-sidebars .main .panel-3col-33-stacked .inside {
   margin: 0;
 }
-/* line 124, ../sass/design/_breakpoints.scss */
+/* line 123, ../sass/design/_breakpoints.scss */
+.lt-ie9 .no-sidebars .main .panel-3col-33-stacked .center-wrapper {
+  zoom: 1;
+}
+/* line 432, ../sass/backbone/global/_mixins.scss */
+.lt-ie9 .no-sidebars .main .panel-3col-33-stacked .center-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 125, ../sass/design/_breakpoints.scss */
 .lt-ie9 .no-sidebars .main .panel-3col-33-stacked .center-wrapper .panel-panel {
   width: 31.8612%;
   float: left;
   margin-right: 2.2082%;
   display: inline;
 }
-/* line 127, ../sass/design/_breakpoints.scss */
+/* line 128, ../sass/design/_breakpoints.scss */
 .lt-ie9 .no-sidebars .main .panel-3col-33-stacked .center-wrapper .panel-col-last {
   float: right;
   margin-right: 0;
@@ -981,10 +1033,46 @@ select {
   display: inline;
 }
 /* line 134, ../sass/design/_breakpoints.scss */
+.lt-ie9 .no-sidebars .main .panel-3col-stacked .inside {
+  margin: 0;
+}
+/* line 137, ../sass/design/_breakpoints.scss */
+.lt-ie9 .no-sidebars .main .panel-3col-stacked .center-wrapper {
+  zoom: 1;
+}
+/* line 432, ../sass/backbone/global/_mixins.scss */
+.lt-ie9 .no-sidebars .main .panel-3col-stacked .center-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 139, ../sass/design/_breakpoints.scss */
+.lt-ie9 .no-sidebars .main .panel-3col-stacked .center-wrapper .panel-panel {
+  width: 48.8959%;
+  float: left;
+  margin-right: 2.2082%;
+  display: inline;
+}
+/* line 143, ../sass/design/_breakpoints.scss */
+.lt-ie9 .no-sidebars .main .panel-3col-stacked .center-wrapper .panel-col-first,
+.lt-ie9 .no-sidebars .main .panel-3col-stacked .center-wrapper .panel-col-last {
+  width: 23.34385%;
+  float: left;
+  margin-right: 2.2082%;
+  display: inline;
+}
+/* line 146, ../sass/design/_breakpoints.scss */
+.lt-ie9 .no-sidebars .main .panel-3col-stacked .center-wrapper .panel-col-last {
+  float: right;
+  margin-right: 0;
+  #margin-left: -1.4em;
+  display: inline;
+}
+/* line 153, ../sass/design/_breakpoints.scss */
 .lt-ie9 footer {
   clear: both;
 }
-/* line 142, ../sass/design/_breakpoints.scss */
+/* line 161, ../sass/design/_breakpoints.scss */
 .lt-ie9 .primary_navigation ul.menu a {
   font-size: 14px;
   padding: 0 20px;
