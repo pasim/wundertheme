@@ -1,72 +1,7 @@
 
 @mixin breakpoint_1 {
-  .page {
-    padding-top: 100px;
-    > header {
-      @include rgba-ie(rgba(0, 0, 0, .6));
-      padding: 10px 0;
-    }
-    .header {
-      > .container {
-        position: relative;
-      }
-    }
-  }
   .primary_navigation {
     display: block;
-    background: #000 url('../images/nav-bg.png') 0 0 repeat-x;
-  }
-  .site-name {
-    @include element-invisible;
-  }
-  .region-header {
-    display: block;
-    float: none;
-    position: absolute;
-    right: 0;
-    top: -90px;
-    width: 200px;
-    .block-search {
-      margin: 0;
-      text-align: left;
-      &:after {
-        display: none;
-      }
-      > .content {
-        width: auto;
-        left: 0;
-      }
-      .form-type-textfield {
-        line-height: 18px;
-      }
-      .form-text {
-        height: 18px;
-        line-height: 18px;
-        border-color: $search-border;
-      }
-      .form-actions {
-        .form-submit {
-          border: none;
-          text-indent: -999em;
-          opacity: 1;
-          background-image: $icons-large;
-          @include sprite-background-position($icons-large, search);
-          @include sprite-dimensions($icons-large, search);
-        }
-      }
-    }
-  }
-  .logo {
-    > a {
-      display: block;
-      background-image: $icons-large;
-      @include sprite-background-position($icons-large, logo);
-      @include sprite-dimensions($icons-large, logo);
-      margin: 0 auto;
-      img {
-        display: none;
-      }
-    }
   }
   aside {
     display: block
