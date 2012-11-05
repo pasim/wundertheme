@@ -17,9 +17,9 @@
       <?php endif; ?>
 
       <?php if($site_name OR $site_slogan ): ?>
-      <hgroup>
+      <hgroup class="site-name">
         <?php if($site_name): ?>
-        <h1><?php print $site_name; ?></h1>
+        <h1><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a></h1>
         <?php endif; ?>
         <?php if ($site_slogan): ?>
           <h2><?php print $site_slogan; ?></h2>
@@ -38,54 +38,60 @@
 
   <?php if ($page['primary_navigation']): ?>
     <nav class="primary_navigation">
-      <?php print render($page['primary_navigation']); ?>
+      <div class="container">
+        <?php print render($page['primary_navigation']); ?>
+      </div>
     </nav>
   <?php endif; ?>
-
-  <?php if ($page['sidebar_first']): ?>
-    <aside role="complementary" class="sidebar sidebar_first">
-      <?php print render($page['sidebar_first']); ?>
-    </aside>
-  <?php endif; ?>
-
-  <div role="main" class="main">
-    <?php print render($title_prefix); ?>
-    <?php if ($title): ?>
-      <h1><?php print $title; ?></h1>
-    <?php endif; ?>
-    <?php print render($title_suffix); ?>
-
-    <?php print $breadcrumb; ?>
-
-    <?php if ($action_links): ?>
-      <ul class="action-links"><?php print render($action_links); ?></ul>
+  
+  <div class="container">
+    <?php if ($page['sidebar_first']): ?>
+      <aside role="complementary" class="sidebar sidebar_first">
+        <?php print render($page['sidebar_first']); ?>
+      </aside>
     <?php endif; ?>
 
-    <?php if ($tabs): ?>
-      <nav class="tabs"><?php print render($tabs); ?></nav>
-    <?php endif; ?>
+    <div role="main" class="main">
+      <?php print render($title_prefix); ?>
+      <?php if ($title): ?>
+        <h1><?php print $title; ?></h1>
+      <?php endif; ?>
+      <?php print render($title_suffix); ?>
 
-    <?php if($page['highlighted'] OR $messages){ ?>
-      <div class="drupal-messages">
-      <?php print render($page['highlighted']); ?>
-      <?php print $messages; ?>
+      <?php print $breadcrumb; ?>
+
+      <?php if ($action_links): ?>
+        <ul class="action-links"><?php print render($action_links); ?></ul>
+      <?php endif; ?>
+
+      <?php if ($tabs): ?>
+        <nav class="tabs"><?php print render($tabs); ?></nav>
+      <?php endif; ?>
+
+      <?php if($page['highlighted'] OR $messages){ ?>
+        <div class="drupal-messages">
+        <?php print render($page['highlighted']); ?>
+        <?php print $messages; ?>
+        </div>
+      <?php } ?>
+
+      <div id="content">
+        <?php print render($page['content']); ?>
       </div>
-    <?php } ?>
 
-    <div id="content">
-      <?php print render($page['content']); ?>
-    </div>
+    </div><!--/main-->
 
-  </div><!--/main-->
-
-  <?php if ($page['sidebar_second']): ?>
-  <aside role="complementary" class="sidebar sidebar_second">
-    <?php print render($page['sidebar_second']); ?>
-  </aside>
-  <?php endif; ?>
+    <?php if ($page['sidebar_second']): ?>
+    <aside role="complementary" class="sidebar sidebar_second">
+      <?php print render($page['sidebar_second']); ?>
+    </aside>
+    <?php endif; ?>
+  </div>
 
   <footer role="contentinfo">
-    <?php print render($page['footer']); ?>
+    <div class="container">
+      <?php print render($page['footer']); ?>
+    </div>
   </footer>
 </div>
 

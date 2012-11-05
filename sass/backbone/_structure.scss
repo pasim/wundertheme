@@ -3,18 +3,13 @@
 //
 ////////////////////////
 
-.page {
+.container {
   @include container;
 }
 header, footer, .main {
   @extend .clearfix;
 }
-aside {
+aside,
+.primary_navigation {
   display: none;
-}
-@include at-breakpoint($breakpoint_1) {
-  @include breakpoint_1;
-}
-.lt-ie9 {
-  @include breakpoint_1;
 }

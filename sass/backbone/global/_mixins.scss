@@ -21,13 +21,13 @@
 // Placeholder text
 // -------------------------
 @mixin placeholder($color: $placeholderText) {
-  :-moz-placeholder {
+  &:-moz-placeholder {
     color: $color;
   }
-  :-ms-input-placeholder {
+  &:-ms-input-placeholder {
     color: $color;
   }
-  ::-webkit-input-placeholder {
+  &::-webkit-input-placeholder {
     color: $color;
   }
 }
@@ -56,6 +56,22 @@
   -ms-transition: $transition;
   -o-transition: $transition;
   transition: $transition;
+}
+// Transitions
+@mixin transition-property($transition) {
+  -webkit-transition-property: $transition;
+  -moz-transition-property: $transition;
+  -ms-transition-property: $transition;
+  -o-transition-property: $transition;
+  transition-property: $transition;
+}
+// Transitions
+@mixin transition-duration($transition) {
+  -webkit-transition-duration: $transition;
+  -moz-transition-duration: $transition;
+  -ms-transition-duration: $transition;
+  -o-transition-duration: $transition;
+  transition-duration: $transition;
 }
 
 // Transformations
@@ -178,11 +194,11 @@
 // --------------------------------------------------
 
 // Add an alphatransparency value to any background or border color (via Elyse Holladay)
-@mixin translucent-background($color: $white, $alpha: 1) {
+@mixin translucent-background($color: #FFF, $alpha: 1) {
   background-color: hsla(hue($color), saturation($color), lightness($color), $alpha);
 }
 
-@mixin translucent-border($color: $white, $alpha: 1) {
+@mixin translucent-border($color: #FFF, $alpha: 1) {
   border-color: hsla(hue($color), saturation($color), lightness($color), $alpha);
   @include background-clip(padding-box);
 }
@@ -259,6 +275,12 @@
 // Reset filters for IE
 @mixin gradient-reset-filter() {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+// IE rgba
+@mixin rgba-ie($color) {
+  background-color: $color;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($color)}', endColorstr='#{ie-hex-str($color)}', GradientType=0); // IE9 and down, gets no color-stop at all for proper fallback
 }
 
 
@@ -388,5 +410,29 @@
 @mixin neg-top-margin($map, $sprite) {
   $sprite-image: sprite-file($map, $sprite);
   margin-top: -#{image-height($sprite-image) / 2};
+}
+
+// A11Y-wise hiding
+// ------------------------
+@mixin element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+@mixin element-focusable {
+  &:active,
+  &:focus {
+    position: static !important;
+    clip: auto;
+  }
+}
+
+@mixin cf {
+  zoom: 1;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 

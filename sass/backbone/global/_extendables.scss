@@ -106,3 +106,12 @@
     font-size: $base-font-size;
   }
 }
+
+// Sprite related stuff
+// ------------------------
+%icons-small {
+  background-image: $icons-small;
+}
+%icons-large {
+  background-image: $icons-large;
+}

@@ -17,8 +17,12 @@ regions[content] = Content
 regions[footer] = Footer
 
 ;-------------- CSS -------------
-stylesheets[all][] = 'stylesheets/style.css'
-stylesheets[print][] = 'stylesheets/print.css'
+stylesheets[all][] = stylesheets/style.css
+stylesheets[print][] = stylesheets/print.css
 
 ;-------------- js -------------
+scripts[] = js/scripts.js
 
+breakpoints[all] = (min-width: 0em)
+breakpoints[small] = (min-width: 35em)
+breakpoints[large] = (min-width: 55em)

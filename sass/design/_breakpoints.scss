@@ -1,0 +1,167 @@
+
+@mixin breakpoint_1 {
+  .page {
+    padding-top: 100px;
+    > header {
+      @include rgba-ie(rgba(0, 0, 0, .6));
+      padding: 10px 0;
+    }
+    .header {
+      > .container {
+        position: relative;
+      }
+    }
+  }
+  .primary_navigation {
+    display: block;
+    background: #000 url('../images/nav-bg.png') 0 0 repeat-x;
+  }
+  .site-name {
+    @include element-invisible;
+  }
+  .region-header {
+    display: block;
+    float: none;
+    position: absolute;
+    right: 0;
+    top: -90px;
+    width: 200px;
+    .block-search {
+      margin: 0;
+      text-align: left;
+      &:after {
+        display: none;
+      }
+      > .content {
+        width: auto;
+        left: 0;
+      }
+      .form-type-textfield {
+        line-height: 18px;
+      }
+      .form-text {
+        height: 18px;
+        line-height: 18px;
+        border-color: $search-border;
+      }
+      .form-actions {
+        .form-submit {
+          border: none;
+          text-indent: -999em;
+          opacity: 1;
+          background-image: $icons-large;
+          @include sprite-background-position($icons-large, search);
+          @include sprite-dimensions($icons-large, search);
+        }
+      }
+    }
+  }
+  .logo {
+    > a {
+      display: block;
+      background-image: $icons-large;
+      @include sprite-background-position($icons-large, logo);
+      @include sprite-dimensions($icons-large, logo);
+      margin: 0 auto;
+      img {
+        display: none;
+      }
+    }
+  }
+  aside {
+    display: block
+  }
+  .one-sidebar {
+    &.sidebar-first {
+      .main {
+        @include span-columns(9 omega, 12);
+      }
+    }
+    &.sidebar-second {
+      .main {
+        @include span-columns(9, 12);
+      }
+    }
+    aside {
+      &.sidebar_first {
+        @include span-columns(3, 12);
+      }
+      &.sidebar_second {
+        @include span-columns(3 omega, 12);
+      }
+    }
+  }
+  .two-sidebars {
+    .main {
+      @include span-columns(6, 12);
+    }
+    .sidebar_first {
+      @include span-columns(3, 12);
+    }
+    .sidebar_second {
+      @include span-columns(3 omega, 12);
+    }
+  }
+  .no-sidebars {
+    .main {
+      @include span-columns(12 omega,12);
+      .panel-2col {
+        .inside {
+          margin: 0;
+        }
+        .panel-col-first {
+          @include span-columns(8, 12);
+        }
+        .panel-col-last {
+          @include span-columns(4 omega, 12);
+        }
+      }
+      .panel-3col-33-stacked {
+        .inside {
+          margin: 0;
+        }
+        .center-wrapper {
+          @include cf;
+          .panel-panel {
+            @include span-columns(4, 12);
+          }
+          .panel-col-last {
+            @include omega;
+          }
+        }
+      }
+      .panel-3col-stacked {
+        .inside {
+          margin: 0;
+        }
+        .center-wrapper {
+          @include cf;
+          .panel-panel {
+            @include span-columns(6, 12);
+          }
+          .panel-col-first,
+          .panel-col-last {
+            @include span-columns(3, 12);
+          }
+          .panel-col-last {
+            @include omega;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    clear: both;
+  }
+}
+
+@mixin breakpoint_2 {
+  .primary_navigation {
+    ul.menu {
+      a {
+        font-size: $base-font-size;
+        padding: 0 20px;
+      }
+    }
+  }
+}
