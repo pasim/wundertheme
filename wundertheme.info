@@ -21,6 +21,7 @@ stylesheets[all][] = stylesheets/style.css
 stylesheets[print][] = stylesheets/print.css
 
 ;-------------- js -------------
+scripts[] = js/retina.js
 scripts[] = js/scripts.js
 
 breakpoints[all] = (min-width: 0em)
