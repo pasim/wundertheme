@@ -21,7 +21,7 @@ regions[footer] = Footer
 ; css is added in the template.php
 
 ;-------------- js -------------
-scripts[] = js/retina.js
+;scripts[] = js/retina.js
 scripts[] = js/scripts.js
 
 breakpoints[all] = (min-width: 0em)
