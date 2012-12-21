@@ -589,30 +589,7 @@ aside {
   }
 }
 
-/* line 2, /Users/frankbaele/workspace/wundertheme/sass/styleguide/styles/_menus.scss */
-.primary_navigation h2 {
-  display: none;
-}
-/* line 5, /Users/frankbaele/workspace/wundertheme/sass/styleguide/styles/_menus.scss */
-.primary_navigation ul.menu {
-  text-align: center;
-}
-/* line 8, /Users/frankbaele/workspace/wundertheme/sass/styleguide/styles/_menus.scss */
-.primary_navigation ul.menu li {
-  margin: 0;
-  padding: 0;
-}
-/* line 12, /Users/frankbaele/workspace/wundertheme/sass/styleguide/styles/_menus.scss */
-.primary_navigation ul.menu a {
-  text-decoration: none;
-  display: inline-block;
-}
-/* line 17, /Users/frankbaele/workspace/wundertheme/sass/styleguide/styles/_menus.scss */
-.primary_navigation ul.menu a:hover, .primary_navigation ul.menu a:focus, .primary_navigation ul.menu a:active {
-  text-decoration: underline;
-}
-
-/* line 13, /Users/frankbaele/workspace/wundertheme/sass/styleguide/_style-guide.scss */
+/* line 12, /Users/frankbaele/workspace/wundertheme/sass/styleguide/_style-guide.scss */
 html,
 body,
 button,
@@ -621,4 +598,27 @@ select {
   color: #4e4c4c;
   font-size: 14px;
   font-family: Helvetica, Arial, sans-serif;
+}
+
+/* line 2, /Users/frankbaele/workspace/wundertheme/sass/design/features/_menus.scss */
+.primary_navigation h2 {
+  display: none;
+}
+/* line 5, /Users/frankbaele/workspace/wundertheme/sass/design/features/_menus.scss */
+.primary_navigation ul.menu {
+  text-align: center;
+}
+/* line 8, /Users/frankbaele/workspace/wundertheme/sass/design/features/_menus.scss */
+.primary_navigation ul.menu li {
+  margin: 0;
+  padding: 0;
+}
+/* line 12, /Users/frankbaele/workspace/wundertheme/sass/design/features/_menus.scss */
+.primary_navigation ul.menu a {
+  text-decoration: none;
+  display: inline-block;
+}
+/* line 17, /Users/frankbaele/workspace/wundertheme/sass/design/features/_menus.scss */
+.primary_navigation ul.menu a:hover, .primary_navigation ul.menu a:focus, .primary_navigation ul.menu a:active {
+  text-decoration: underline;
 }
