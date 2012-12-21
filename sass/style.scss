@@ -13,7 +13,12 @@
 @import 'susy';
 @import 'respond-to';
 
+// Turn off media-query output for IE-only stylesheets.
+// $breakpoint-media-output: <boolean>;
 $breakpoint-media-output: true;
+
+//Turn off media-query fallback output for non-IE stylesheets.
+// $breakpoint-ie-output: <boolean>;
 $breakpoint-ie-output: false;
 
 ////////////////////////
