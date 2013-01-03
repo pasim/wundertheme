@@ -3,7 +3,7 @@
 // kpr($variables['template_files']);
 //  http://api.drupal.org/api/drupal/modules--block--block.tpl.php/7
 if ($classes) {
-  $classes = ' class="'. $classes . ' block"';
+  $classes = ' class="'. $classes . '"';
 }
 
 //add a aria role search if this is the search block
