@@ -7,6 +7,23 @@
   <![if !IE]><html lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>><![endif]>
 <head>
 <title><?php print $head_title; ?></title>
+<!-- 
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ __        __                      _                 _                             _   
+ \ \      / /  _   _   _ __     __| |   ___   _ __  | | __  _ __    __ _   _   _  | |_ 
+  \ \ /\ / /  | | | | | '_ \   / _` |  / _ \ | '__| | |/ / | '__|  / _` | | | | | | __|
+   \ V  V /   | |_| | | | | | | (_| | |  __/ | |    |   <  | |    | (_| | | |_| | | |_ 
+    \_/\_/     \__,_| |_| |_|  \__,_|  \___| |_|    |_|\_\ |_|     \__,_|  \__,_|  \__|
+
+       (C) Wunderkraut Belgium - Zénobe Grammestraat 34, 2018 Antwerp, Belgium
+
+                                   www.wunderkraut.com       
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+
+//-->
 <?php print $head; ?>
 <meta name="MobileOptimized" content="width">
 <meta name="HandheldFriendly" content="true">
