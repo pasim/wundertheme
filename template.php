@@ -15,10 +15,13 @@ function wundertheme_form_search_block_form_alter(&$form, &$form_state, $form_id
 
 /**
  * Implements hook_css_alter().
- *
- * Gets rid of some Panels CSS.
  */
 function wundertheme_css_alter(&$css) {
+
+  /* Remove some default Drupal css */
+  unset($css['modules/system/system.menus.css']);
+
+  /* Get rid of some default panel css */
   foreach ($css as $path => $meta) {
     if (strpos($path, 'threecol_33_34_33_stacked') !== FALSE || strpos($path, 'threecol_25_50_25_stacked') !== FALSE) {
       unset($css[$path]);
