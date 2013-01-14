@@ -792,11 +792,11 @@ h6 {
 /* Base link settings */
 /* line 79, ../sass/base/_typography.scss */
 a {
-  color: orange;
+  color: #58b8d1;
 }
 /* line 83, ../sass/base/_typography.scss */
 a:hover, a:focus {
-  color: red;
+  color: #df006e;
 }
 
 /*
