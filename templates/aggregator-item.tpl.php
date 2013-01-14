@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * Default theme implementation to format an individual feed item for display
@@ -15,25 +16,37 @@
  *
  * @see template_preprocess()
  * @see template_preprocess_aggregator_item()
+ *
+ * @ingroup themeable
+ *
+ * @link http://api.drupal.org/api/drupal/modules--aggregator--aggregator-item.tpl.php/7
+ *
+ *
+ * Wunderkraut changes
+ * --------------------------------------------------------------------
+ * - Remove title class
+ * - Simplify classnames
+ * - Put the title in the l-function
+ * - 
  */
 ?>
 <div class="feed-item">
   <h3><a href="<?php print $feed_url; ?>"><?php print $feed_title; ?></a></h3>
 
   <div class="meta">
-  <?php if ($source_url) : ?>
-    <?php print l($source_title, $source_url, array('attributes' => array('class' => ''))); ?>
-  <?php endif; ?>
+    <?php if ($source_url): ?>
+      <?php print l($source_title, $source_url, array('attributes' => array('class' => ''))); ?>
+    <?php endif; ?>
     <span class="date"><?php print $source_date; ?></span>
   </div>
 
-<?php if ($content) : ?>
+<?php if ($content): ?>
   <div class="body">
     <?php print $content; ?>
   </div>
 <?php endif; ?>
 
-<?php if ($categories) : ?>
+<?php if ($categories): ?>
   <div class="categories">
     <?php print t('Categories'); ?>: <?php print implode(', ', $categories); ?>
   </div>
