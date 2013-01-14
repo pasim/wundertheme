@@ -344,9 +344,10 @@ table {
  * Layout
  *
  * All layout theming should go in this file
- */
-/* Grid settings */
-/*
+ *
+ *
+ * Grid settings
+ *
  * Set your base-font-size in typography.scss
  * Calculate your grid settings based on your base-font-size
  * Calculate your em's online: pxtoem.com
@@ -361,7 +362,7 @@ table {
  */
 /* Breakpoints */
 /* Layout */
-/* line 38, ../sass/base/_layout.scss */
+/* line 36, ../sass/base/_layout.scss */
 .container {
   *zoom: 1;
   max-width: 58.75em;
@@ -378,7 +379,7 @@ table {
   clear: both;
 }
 
-/* line 46, ../sass/base/_layout.scss */
+/* line 44, ../sass/base/_layout.scss */
 .primary_navigation {
   display: none;
 }
@@ -386,13 +387,13 @@ table {
 .lt-ie9 .primary_navigation {
   display: block;
 }
-/* line 53, ../sass/base/_layout.scss */
+/* line 51, ../sass/base/_layout.scss */
 .lt-ie9 .primary_navigation ul.menu a {
   font-size: 16px;
   padding: 0 20px;
 }
 
-/* line 61, ../sass/base/_layout.scss */
+/* line 59, ../sass/base/_layout.scss */
 aside {
   display: none;
 }
@@ -401,7 +402,7 @@ aside {
   display: block;
 }
 
-/* line 71, ../sass/base/_layout.scss */
+/* line 69, ../sass/base/_layout.scss */
 .lt-ie9 .one-sidebar.sidebar-first .main {
   width: 74.46809%;
   float: right;
@@ -409,21 +410,21 @@ aside {
   #margin-left: -1.25em;
   display: inline;
 }
-/* line 76, ../sass/base/_layout.scss */
+/* line 74, ../sass/base/_layout.scss */
 .lt-ie9 .one-sidebar.sidebar-second .main {
   width: 74.46809%;
   float: left;
   margin-right: 2.12766%;
   display: inline;
 }
-/* line 81, ../sass/base/_layout.scss */
+/* line 79, ../sass/base/_layout.scss */
 .lt-ie9 .one-sidebar aside.sidebar_first {
   width: 23.40426%;
   float: left;
   margin-right: 2.12766%;
   display: inline;
 }
-/* line 84, ../sass/base/_layout.scss */
+/* line 82, ../sass/base/_layout.scss */
 .lt-ie9 .one-sidebar aside.sidebar_second {
   width: 23.40426%;
   float: right;
@@ -432,21 +433,21 @@ aside {
   display: inline;
 }
 
-/* line 93, ../sass/base/_layout.scss */
+/* line 91, ../sass/base/_layout.scss */
 .lt-ie9 .two-sidebars .main {
   width: 48.93617%;
   float: left;
   margin-right: 2.12766%;
   display: inline;
 }
-/* line 96, ../sass/base/_layout.scss */
+/* line 94, ../sass/base/_layout.scss */
 .lt-ie9 .two-sidebars .sidebar_first {
   width: 23.40426%;
   float: left;
   margin-right: 2.12766%;
   display: inline;
 }
-/* line 99, ../sass/base/_layout.scss */
+/* line 97, ../sass/base/_layout.scss */
 .lt-ie9 .two-sidebars .sidebar_second {
   width: 23.40426%;
   float: right;
@@ -455,7 +456,7 @@ aside {
   display: inline;
 }
 
-/* line 107, ../sass/base/_layout.scss */
+/* line 105, ../sass/base/_layout.scss */
 .lt-ie9 .no-sidebars .main {
   width: 100%;
   float: right;
@@ -463,18 +464,18 @@ aside {
   #margin-left: -1.25em;
   display: inline;
 }
-/* line 110, ../sass/base/_layout.scss */
+/* line 108, ../sass/base/_layout.scss */
 .lt-ie9 .no-sidebars .main .panel-2col .inside {
   margin: 0;
 }
-/* line 113, ../sass/base/_layout.scss */
+/* line 111, ../sass/base/_layout.scss */
 .lt-ie9 .no-sidebars .main .panel-2col .panel-col-first {
   width: 65.95745%;
   float: left;
   margin-right: 2.12766%;
   display: inline;
 }
-/* line 116, ../sass/base/_layout.scss */
+/* line 114, ../sass/base/_layout.scss */
 .lt-ie9 .no-sidebars .main .panel-2col .panel-col-last {
   width: 31.91489%;
   float: right;
@@ -482,11 +483,11 @@ aside {
   #margin-left: -1.25em;
   display: inline;
 }
-/* line 121, ../sass/base/_layout.scss */
+/* line 119, ../sass/base/_layout.scss */
 .lt-ie9 .no-sidebars .main .panel-3col-33-stacked .inside {
   margin: 0;
 }
-/* line 124, ../sass/base/_layout.scss */
+/* line 122, ../sass/base/_layout.scss */
 .lt-ie9 .no-sidebars .main .panel-3col-33-stacked .center-wrapper {
   zoom: 1;
 }
@@ -496,25 +497,25 @@ aside {
   display: table;
   clear: both;
 }
-/* line 126, ../sass/base/_layout.scss */
+/* line 124, ../sass/base/_layout.scss */
 .lt-ie9 .no-sidebars .main .panel-3col-33-stacked .center-wrapper .panel-panel {
   width: 31.91489%;
   float: left;
   margin-right: 2.12766%;
   display: inline;
 }
-/* line 129, ../sass/base/_layout.scss */
+/* line 127, ../sass/base/_layout.scss */
 .lt-ie9 .no-sidebars .main .panel-3col-33-stacked .center-wrapper .panel-col-last {
   float: right;
   margin-right: 0;
   #margin-left: -1.25em;
   display: inline;
 }
-/* line 135, ../sass/base/_layout.scss */
+/* line 133, ../sass/base/_layout.scss */
 .lt-ie9 .no-sidebars .main .panel-3col-stacked .inside {
   margin: 0;
 }
-/* line 138, ../sass/base/_layout.scss */
+/* line 136, ../sass/base/_layout.scss */
 .lt-ie9 .no-sidebars .main .panel-3col-stacked .center-wrapper {
   zoom: 1;
 }
@@ -524,14 +525,14 @@ aside {
   display: table;
   clear: both;
 }
-/* line 140, ../sass/base/_layout.scss */
+/* line 138, ../sass/base/_layout.scss */
 .lt-ie9 .no-sidebars .main .panel-3col-stacked .center-wrapper .panel-panel {
   width: 48.93617%;
   float: left;
   margin-right: 2.12766%;
   display: inline;
 }
-/* line 144, ../sass/base/_layout.scss */
+/* line 142, ../sass/base/_layout.scss */
 .lt-ie9 .no-sidebars .main .panel-3col-stacked .center-wrapper .panel-col-first,
 .lt-ie9 .no-sidebars .main .panel-3col-stacked .center-wrapper .panel-col-last {
   width: 23.40426%;
@@ -539,7 +540,7 @@ aside {
   margin-right: 2.12766%;
   display: inline;
 }
-/* line 147, ../sass/base/_layout.scss */
+/* line 145, ../sass/base/_layout.scss */
 .lt-ie9 .no-sidebars .main .panel-3col-stacked .center-wrapper .panel-col-last {
   float: right;
   margin-right: 0;
