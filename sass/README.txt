@@ -28,7 +28,7 @@ WHEN STARTING A NEW PROJECT ...
 ---------------------------------------------------------
 
 1. Set your base font settings (base -> typography.scss)
-2. Set up your grid (base -> layout.scss)
+2. Set up your grid & breakpoints (base -> layout.scss)
 3. Start with the basic layout (base -> layout.scss)
 4. Add the general project colors (base -> color.scss)
 5. Add the default theming for header, footer, breadcrumb, links, ... (base -> design.scss)
