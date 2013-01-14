@@ -1,6 +1,11 @@
-////////////////////////
-// Compass Extensions
-////////////////////////
+/**
+ * Internet Explorer style file
+ *
+ * This file is compiled into ie.css
+ */
+
+/* ---------- Compass Extensions ---------- */
+
 @import 'toolkit';
 @import 'susy';
 @import 'respond-to';
@@ -13,17 +18,23 @@ $breakpoint-media-output: false;
 // $breakpoint-ie-output: <boolean>;
 $breakpoint-ie-output: true;
 
-////////////////////////
-// Base Import
-////////////////////////
-// @import 'backbone/backbone';
+/* ---------- Import base ---------- */
 
-////////////////////////
-// Import Style Guide
-////////////////////////
-// @import 'styleguide/style-guide';
+@import 'base/logic/variables';
+@import 'base/logic/functions';
+@import 'base/logic/mixins';
+@import 'base/logic/normalize';
+@import 'base/logic/extendables';
 
-////////////////////////
-// Import Design
-////////////////////////
-// @import 'design/design';
+@import 'base/layout';
+@import 'base/colors';
+@import 'base/typography';
+@import 'base/design';
+
+/* ---------- Import styles ---------- */
+
+// @import 'styles/style1';
+
+/* ---------- Import features ---------- */
+
+// @import 'features/feature1';

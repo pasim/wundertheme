@@ -1,14 +1,11 @@
-////////////////////////
-// Style File
-//
-// This file gets turned into style.css. This file should really
-//  hold nothing except for imports of your base, layout, and design
-//  partials, plus the mixins required to kickstart Aura and Style Guide.
-////////////////////////
+/**
+ * Style file
+ *
+ * This file is compiled into style.css
+ */
 
-////////////////////////
-// Compass Extensions
-////////////////////////
+/* ---------- Compass Extensions ---------- */
+
 @import 'toolkit';
 @import 'susy';
 @import 'respond-to';
@@ -21,17 +18,23 @@ $breakpoint-media-output: true;
 // $breakpoint-ie-output: <boolean>;
 $breakpoint-ie-output: false;
 
-////////////////////////
-// Base Import
-////////////////////////
-@import 'backbone/backbone';
+/* ---------- Import base ---------- */
 
-////////////////////////
-// Import Style Guide
-////////////////////////
-@import 'styleguide/style-guide';
+@import 'base/logic/variables';
+@import 'base/logic/functions';
+@import 'base/logic/mixins';
+@import 'base/logic/normalize';
+@import 'base/logic/extendables';
 
-////////////////////////
-// Import Design
-////////////////////////
-@import 'design/design';
+@import 'base/layout';
+@import 'base/colors';
+@import 'base/typography';
+@import 'base/design';
+
+/* ---------- Import styles ---------- */
+
+// @import 'styles/style1';
+
+/* ---------- Import features ---------- */
+
+// @import 'features/feature1';

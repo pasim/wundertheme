@@ -1,20 +1,24 @@
-////////////////////////
-// Print File
-//
-// This file gets turned into style.css. This file should really
-//  hold nothing except for imports of your base, layout, and design
-//  partials, plus the mixins required to kickstart Aura and Style Guide.
-// This file is styles specific to Printed files.
-////////////////////////
+/**
+ * Print style file
+ *
+ * This file is compiled into print.css
+ */
 
-////////////////////////
-// Compass Extensions
-////////////////////////
+/* ---------- Compass Extensions ---------- */
+
 @import 'toolkit';
 @import 'susy';
 @import 'respond-to';
 
-////////////////////////
-// Base Import
-////////////////////////
-@import 'Backbone/backbone';
+/* ---------- Import base ---------- */
+
+@import 'base/logic/variables';
+@import 'base/logic/functions';
+@import 'base/logic/mixins';
+@import 'base/logic/normalize';
+@import 'base/logic/extendables';
+
+@import 'base/layout';
+@import 'base/colors';
+@import 'base/typography';
+@import 'base/design';
