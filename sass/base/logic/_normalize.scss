@@ -44,27 +44,6 @@ audio:not([controls]) {
   display: none;
 }
 
-// Base
-
-// 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
-//    http://clagnut.com/blog/348/#c790
-// 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
-//    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
-html {
-  font-size: 100% * ($base-font-size / 16px); /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -ms-text-size-adjust: 100%; /* 2 */
-}
-
-// Addresses font-family inconsistency between 'textarea' and other form elements.
-html,
-button,
-input,
-select,
-textarea {
-  font-family: $base-font-family;
-}
-
 // Addresses margins handled incorrectly in IE6/7
 body {
   margin: 0;
@@ -96,8 +75,7 @@ strong {
 }
 
 blockquote {
-  // Sets 1 unit of vertical rhythm on the top and bottom margin.
-  margin: 0 $indent-amount;
+  margin: 0;
 }
 
 // Addresses styling not present in S5, Chrome
@@ -114,8 +92,7 @@ mark {
 // Addresses margins set differently in IE6/7
 p,
 pre {
-  /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
-  margin: 0 0;
+  margin: 0;
 }
 
 // Corrects font family set oddly in IE6, S4/5, Chrome
@@ -128,7 +105,6 @@ samp {
   @if $legacy-support-for-ie6 {
     _font-family: 'courier new', monospace;
   }
-  @include adjust-font-size-to(1 * $base-font-size);
 }
 
 // Improves readability of pre-formatted text in all browsers
@@ -178,19 +154,16 @@ sub {
 dl,
 menu,
 ol,
-ul {
-  margin: 0;
-}
-
+ul,
 dd {
-  margin: 0 0 0 $indent-amount;
+  margin: 0;
 }
 
 // Addresses paddings set differently in IE6/7
 menu,
 ol,
 ul {
-  padding: 0 0 0 $indent-amount;
+  padding: 0;
 }
 
 // Corrects list images handled incorrectly in IE7

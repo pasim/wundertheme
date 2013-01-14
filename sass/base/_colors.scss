@@ -1,0 +1,13 @@
+/**
+ * Colors
+ *
+ * All colors used in the project should be declared here.
+ */
+
+$base-text-color: #333;
+$base-selected-text-color: invert($base-text-color);
+$base-selected-text-background-color: $base-text-color;
+
+$base-link-color: orange;
+$base-link-hover-color: red;
+
