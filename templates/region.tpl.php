@@ -1,5 +1,4 @@
 <?php
-// $Id: region.tpl.php,v 1.3 2010/09/23 17:53:09 dries Exp $
 
 /**
  * @file
@@ -25,9 +24,21 @@
  * @see template_preprocess()
  * @see template_preprocess_region()
  * @see template_process()
+ *
+ * @ingroup themeable
+ *
+ * @link http://api.drupal.org/api/drupal/modules--system--region.tpl.php/7
+ *
+ *
+ * Wunderkraut changes
+ * --------------------------------------------------------------------
+ * - Remove check for existing content
+ * - 
  */
 ?>
 
 <div class="<?php print $classes; ?>">
   <?php print $content; ?>
 </div>
+
+
