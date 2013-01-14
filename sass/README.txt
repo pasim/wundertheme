@@ -39,6 +39,15 @@ WHEN STARTING A NEW PROJECT ...
 
 WHEN THROWN IN TO THIS PROJECT ...
 ---------------------------------------------------------
+- Determine the nature of the changes
+
+  1. Design elements (header, footer, breadcrumb, ..)
+     : look in base -> design.scss
+  2. Feature
+     : look in features -> features.scss
+  3. Style
+     : look in styles -> styles.scss
+     
 - Avoid changing styles
 - If you are changing a style, be sure to check wherever the style is used
 - Be aware of the consequences when you change
