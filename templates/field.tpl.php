@@ -1,11 +1,10 @@
 <?php
 
-// $Id: field.tpl.php,v 1.13 2010/03/26 17:14:45 dries Exp $
-
 /**
  * @file field.tpl.php
  * Default template implementation to display the value of a field.
  *
+ * This file is not used and is here as a starting point for customization only.
  * @see theme_field()
  *
  * Available variables:
@@ -41,8 +40,17 @@
  *
  * @see template_preprocess_field()
  * @see theme_field()
+ *
+ * @ingroup themeable
+ *
+ * @link http://api.drupal.org/api/drupal/modules--field--theme--field.tpl.php/7
+ *
+ *
+ * Wunderkraut changes
+ * --------------------------------------------------------------------
+ * - Remove check for existing content
+ * - Add custom check for multiple items
  */
-
 ?>
 
 <div <?php if($classes) {?>class="<?php print $classes; ?>"<?php } ?><?php print $attributes; ?>>
