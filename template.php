@@ -10,7 +10,7 @@
  * Adds a placeholder to the search block.
  */
 function wundertheme_form_search_block_form_alter(&$form, &$form_state, $form_id) {
-  $form['search_block_form']['#attributes']['placeholder'] = t('Search...');
+  $form['search_block_form']['#attributes']['placeholder'] = t('Search…');
 }
 
 /**
@@ -65,4 +65,28 @@ function wundertheme_preprocess_html(&$variables, $hook) {
       'every_page' => TRUE,
     )
   );
+}
+
+/**
+ * Implements theme_breadcrumb()
+ *
+ * Return a themed breadcrumb trail.
+ *
+ * @param $breadcrumb
+ *   An array containing the breadcrumb links.
+ * @return a string containing the breadcrumb output.
+ */
+function wundertheme_breadcrumb($variables) {
+  $item = menu_get_item();
+  $variables['breadcrumb'][] = drupal_get_title();
+  $breadcrumb = $variables['breadcrumb'];
+
+  if (!empty($breadcrumb)) {
+    // Provide a navigational heading to give context for breadcrumb links to
+    // screen-reader users. Make the heading invisible with .element-invisible.
+    $output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
+    $output .= '<div class="breadcrumb">' . implode(' > ', $breadcrumb) . '</div>';
+
+    return $output;
+  }
 }
