@@ -27,13 +27,3 @@ Compass is a Sass-based Stylesheet Framework that streamlines the creation and m
 - toolkit: gem install toolkit
 
 Toolkit for Progressive Enhancement and Responsive Web Design
-
-- respond-to: gem install respond-to
-
-Semantic Media Query Handling
-
-- susy: gem install susy
-
-Susy grids are fluid on the inside, ready to respond at any moment, but contained in the candy shell of your choice, 
-so they respond how and when and where you want them to. 
-We don't design your site or dictate your markup, we just do the math and get out of your way.
