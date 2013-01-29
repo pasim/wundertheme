@@ -93,25 +93,26 @@
       <?php endif; ?>
 
       <?php if($site_name OR $site_slogan ): ?>
-      
-      <hgroup class="site-name">
-        <?php if($site_name): ?>
-          <?php if($is_front): ?>
-            <h1><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a></h1>
-          <?php else : ?>
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
+        <hgroup class="site-name">
+          <?php if($site_name): ?>
+            <?php if($is_front): ?>
+              <h1><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a></h1>
+            <?php else : ?>
+              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
+            <?php endif; ?>
           <?php endif; ?>
-        <?php endif; ?>
-        <?php if ($site_slogan): ?>
-          <h2><?php print $site_slogan; ?></h2>
-        <?php endif; ?>
-      </hgroup>
+          <?php if ($site_slogan): ?>
+            <h2><?php print $site_slogan; ?></h2>
+          <?php endif; ?>
+        </hgroup>
       <?php endif; ?>
+
       <?php if ($page['header']): ?>
         <div class="header">
           <?php print render($page['header']); ?>
         </div>
       <?php endif; ?>
+
     </div>
   </header>
 
