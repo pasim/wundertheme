@@ -107,14 +107,12 @@
         <?php endif; ?>
       </hgroup>
       <?php endif; ?>
-    </div>
-    <?php if ($page['header']): ?>
-      <div class="header">
-        <div class="container">
-        <?php print render($page['header']); ?>
+      <?php if ($page['header']): ?>
+        <div class="header">
+          <?php print render($page['header']); ?>
         </div>
-      </div>
-    <?php endif; ?>
+      <?php endif; ?>
+    </div>
   </header>
 
   <?php if ($page['primary_navigation']): ?>
