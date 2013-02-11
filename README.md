@@ -1,16 +1,16 @@
 wundertheme
 ===========
 
-Wundertheme is a sass based drupal starter theme that embodies the wunderkraut belgium frontend workflow
+Wundertheme is a Sass based Drupal starter theme that embodies the Wunderkraut Belgium frontend workflow.
 
-Requierments
+Requirements
 ===========
-To work properly with wundertheme you need: 
+To properly work with wundertheme you need: 
 
 - ruby (if you have osx, this is already installed), 
 
-Ruby 1.9.1 is recommended for best support of gems, 1.9.3 is the latested stable release.
-A good version manager for ruby is RVM, will save you alot of headaches.
+Ruby 1.9.1 is recommended for best support of gems, 1.9.3 is the latest stable release.
+A good version manager for ruby is RVM. It will save you alot of headaches.
 
 Following ruby gems:
 
