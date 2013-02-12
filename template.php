@@ -52,6 +52,7 @@ function wundertheme_preprocess_html(&$variables, $hook) {
       ),
       'weight' => 999,
       'every_page' => TRUE,
+      'media' => 'screen, projection'
     )
   );
   drupal_add_css( $theme_path . '/stylesheets/style.css',
@@ -63,6 +64,15 @@ function wundertheme_preprocess_html(&$variables, $hook) {
       ),
       'weight' => 999,
       'every_page' => TRUE,
+      'media' => 'screen, projection'
+    )
+  );
+  drupal_add_css( $theme_path . '/stylesheets/print.css',
+    array(
+      'group' => CSS_THEME,
+      'weight' => 999,
+      'every_page' => TRUE,
+      'media' => 'print'
     )
   );
 }
