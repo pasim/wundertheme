@@ -144,7 +144,7 @@
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
 
-      <?php if ($tabs): ?>
+      <?php if ($tabs['#primary']): ?>
         <nav class="tabs"><?php print render($tabs); ?></nav>
       <?php endif; ?>
 
