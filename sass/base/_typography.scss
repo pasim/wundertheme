@@ -37,13 +37,6 @@ input,
 select,
 textarea {
   font-family: $base-font-family;
-  color: $base-text-color;
-
-  ::selection,
-  ::-moz-selection {
-    color: $base-selected-text-color;
-    background: $base-selected-text-background-color;
-  }
 }
 
 
