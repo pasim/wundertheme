@@ -133,13 +133,15 @@
 
     <div role="main" class="main">
 
-      <?php if($page['highlighted'] OR $messages){ ?>
+      <?php if($page['highlighted']){ ?>
         <?php print render($page['highlighted']); ?>
       <?php } ?>
-      
-      <div class="drupal-messages">
-        <?php print $messages; ?>
-      </div>
+
+      <?php if($messages){ ?>
+        <div class="drupal-messages">
+          <?php print $messages; ?>
+        </div>
+      <?php } ?>
 
       <?php print render($title_prefix); ?>
       <?php if ($title && !$is_front): ?>
