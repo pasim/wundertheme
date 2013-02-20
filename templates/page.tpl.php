@@ -132,6 +132,15 @@
     <?php endif; ?>
 
     <div role="main" class="main">
+
+      <?php if($page['highlighted'] OR $messages){ ?>
+        <?php print render($page['highlighted']); ?>
+      <?php } ?>
+      
+      <div class="drupal-messages">
+        <?php print $messages; ?>
+      </div>
+
       <?php print render($title_prefix); ?>
       <?php if ($title && !$is_front): ?>
         <h1><?php print $title; ?></h1>
@@ -147,13 +156,6 @@
       <?php if ($tabs['#primary']): ?>
         <nav class="tabs"><?php print render($tabs); ?></nav>
       <?php endif; ?>
-
-      <?php if($page['highlighted'] OR $messages){ ?>
-        <div class="drupal-messages">
-        <?php print render($page['highlighted']); ?>
-        <?php print $messages; ?>
-        </div>
-      <?php } ?>
 
       <div id="content">
         <?php print render($page['content']); ?>
