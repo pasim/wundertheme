@@ -143,11 +143,11 @@
         </div>
       <?php } ?>
 
-      <?php print render($title_prefix); ?>
       <?php if ($title && !$is_front): ?>
-        <h1><?php print $title; ?></h1>
+        <?php print render($title_prefix); ?>
+          <h1><?php print $title; ?></h1>
+        <?php print render($title_suffix); ?>
       <?php endif; ?>
-      <?php print render($title_suffix); ?>
 
       <?php print $breadcrumb; ?>
 
