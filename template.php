@@ -100,3 +100,15 @@ function wundertheme_breadcrumb($variables) {
     return $output;
   }
 }
+
+function wundertheme_preprocess_page(&$variables){
+
+  //custom 404
+  $headers = drupal_get_http_header();
+
+  if (isset($headers['status'])) {
+    if($headers['status'] == '404 Not Found'){
+      $variables['theme_hook_suggestions'][] = 'page__404';
+    }
+  }
+}
