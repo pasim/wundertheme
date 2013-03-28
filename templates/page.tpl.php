@@ -158,11 +158,7 @@
       <?php if ($tabs['#primary']): ?>
         <nav class="tabs"><?php print render($tabs); ?></nav>
       <?php endif; ?>
-
-      <div id="content">
-        <?php print render($page['content']); ?>
-      </div>
-
+      <?php print render($page['content']); ?>
     </div><!--/main-->
 
     <?php if ($page['sidebar_second']): ?>
