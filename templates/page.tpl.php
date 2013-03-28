@@ -167,10 +167,11 @@
     </aside>
     <?php endif; ?>
   </div>
-
-  <footer role="contentinfo">
-    <div class="container">
-      <?php print render($page['footer']); ?>
-    </div>
-  </footer>
+  <?php if ($page['footer']): ?>
+    <footer role="contentinfo">
+      <div class="container">
+        <?php print render($page['footer']); ?>
+      </div>
+    </footer>
+  <?php endif; ?>
 </div>
