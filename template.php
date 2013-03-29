@@ -45,11 +45,13 @@ function wundertheme_css_alter(&$css) {
     'modules/system/system.maintenance.css' => FALSE,
     'modules/system/system.messages.css' => FALSE,
     'modules/system/system.theme.css' => FALSE,
+    'modules/system/system.menus.css' => FALSE,
     'modules/taxonomy/taxonomy.css' => FALSE,
     'modules/tracker/tracker.css' => FALSE,
     'modules/update/update.css' => FALSE,
     'modules/user/user.css' => FALSE,
   );
+
   $css = array_diff_key($css, $exclude);
 
   /* Get rid of some default panel css */
