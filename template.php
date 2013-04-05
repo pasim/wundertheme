@@ -134,14 +134,66 @@ function wundertheme_breadcrumb($variables) {
   }
 }
 
+/**
+ * Implements template_process_node().
+ *
+ * @param $variables
+ * An array of variables to pass to the theme template.
+ *
+ */
 function wundertheme_preprocess_page(&$variables){
 
-  //custom 404
+  // We want to use a custom 404 from the Wundertheme templates;
   $headers = drupal_get_http_header();
 
   if (isset($headers['status'])) {
     if($headers['status'] == '404 Not Found'){
       $variables['theme_hook_suggestions'][] = 'page__404';
+    }
+  }
+}
+
+/**
+ * Implements template_preprocess_button().
+ *
+ * @param $variables
+ * An array of variables to pass to the theme function.
+ *
+ */
+function wundertheme_preprocess_button(&$variables) {
+  // Rewrite the drupal classes for buttons so we can consistently theme them.
+  $variables['element']['#attributes']['class'][] = 'btn';
+
+  if (isset($variables['element']['#value'])) {
+    $classes = array(
+      //specifics
+      t('Save and add') => 'btn-info',
+      t('Add another item') => 'btn-info',
+      t('Add effect') => 'btn-primary',
+      t('Add and configure') => 'btn-primary',
+      t('Update style') => 'btn-primary',
+      t('Download feature') => 'btn-primary',
+      //generals
+      t('Save') => 'btn-primary',
+      t('Apply') => 'btn-primary',
+      t('Create') => 'btn-primary',
+      t('Confirm') => 'btn-primary',
+      t('Submit') => 'btn-primary',
+      t('Export') => 'btn-primary',
+      t('Import') => 'btn-primary',
+      t('Restore') => 'btn-primary',
+      t('Rebuild') => 'btn-primary',
+      t('Search') => 'btn-primary',
+      t('Add') => 'btn-info',
+      t('Update') => 'btn-info',
+      t('Delete') => 'btn-danger',
+      t('Remove') => 'btn-danger',
+    );
+    foreach ($classes as $search => $class) {
+      if (strpos($variables['element']['#value'], $search) !== FALSE) {
+        $vars['element']['#attributes']['class'][] = $class;
+        break;
+      }
     }
   }
 }
