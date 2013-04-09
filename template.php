@@ -162,36 +162,36 @@ function wundertheme_preprocess_page(&$variables){
  */
 function wundertheme_preprocess_button(&$variables) {
   // Rewrite the drupal classes for buttons so we can consistently theme them.
-  $variables['element']['#attributes']['class'][] = 'btn';
+  $variables['element']['#attributes']['class'][] = 'button';
 
   if (isset($variables['element']['#value'])) {
     $classes = array(
       //specifics
-      t('Save and add') => 'btn-info',
-      t('Add another item') => 'btn-info',
-      t('Add effect') => 'btn-primary',
-      t('Add and configure') => 'btn-primary',
-      t('Update style') => 'btn-primary',
-      t('Download feature') => 'btn-primary',
+      t('Save and add') => '',
+      t('Add another item') => '',
+      t('Add effect') => '',
+      t('Add and configure') => '',
+      t('Update style') => '',
+      t('Download feature') => '',
       //generals
-      t('Save') => 'btn-primary',
-      t('Apply') => 'btn-primary',
-      t('Create') => 'btn-primary',
-      t('Confirm') => 'btn-primary',
-      t('Submit') => 'btn-primary',
-      t('Export') => 'btn-primary',
-      t('Import') => 'btn-primary',
-      t('Restore') => 'btn-primary',
-      t('Rebuild') => 'btn-primary',
-      t('Search') => 'btn-primary',
-      t('Add') => 'btn-info',
-      t('Update') => 'btn-info',
-      t('Delete') => 'btn-danger',
-      t('Remove') => 'btn-danger',
+      t('Save') => '',
+      t('Apply') => '',
+      t('Create') => '',
+      t('Confirm') => '',
+      t('Submit') => '',
+      t('Export') => '',
+      t('Import') => '',
+      t('Restore') => '',
+      t('Rebuild') => '',
+      t('Search') => '',
+      t('Add') => '',
+      t('Update') => '',
+      t('Delete') => 'alert',
+      t('Remove') => 'alert',
     );
     foreach ($classes as $search => $class) {
       if (strpos($variables['element']['#value'], $search) !== FALSE) {
-        $vars['element']['#attributes']['class'][] = $class;
+        $variables['element']['#attributes']['class'][] = $class;
         break;
       }
     }
