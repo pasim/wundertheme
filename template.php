@@ -135,25 +135,6 @@ function wundertheme_breadcrumb($variables) {
 }
 
 /**
- * Implements template_process_node().
- *
- * @param $variables
- * An array of variables to pass to the theme template.
- *
- */
-function wundertheme_preprocess_page(&$variables){
-
-  // We want to use a custom 404 from the Wundertheme templates;
-  $headers = drupal_get_http_header();
-
-  if (isset($headers['status'])) {
-    if($headers['status'] == '404 Not Found'){
-      $variables['theme_hook_suggestions'][] = 'page__404';
-    }
-  }
-}
-
-/**
  * Implements template_preprocess_button().
  *
  * @param $variables
