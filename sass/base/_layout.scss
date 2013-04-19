@@ -40,29 +40,6 @@ $breakpoint_2: 55em lt-ie9;
 header, footer, .main {
   @extend .clearfix;
 }
-
-.primary_navigation {
-  display: none;
-  @include at-breakpoint($breakpoint_1) {
-    display: block;
-  }
-  @include at-breakpoint($breakpoint_2) {
-    ul.menu {
-      a {
-        font-size: $base-font-size;
-        padding: 0 20px;
-      }
-    }
-  }
-}
-
-aside {
-  display: none;
-  @include at-breakpoint($breakpoint_1) {
-    display: block;
-  }
-}
-
 .one-sidebar {
   @include at-breakpoint($breakpoint_1) {
     &.sidebar-first {
