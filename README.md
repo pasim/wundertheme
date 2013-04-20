@@ -27,3 +27,11 @@ Compass is a Sass-based Stylesheet Framework that streamlines the creation and m
 - toolkit: gem install toolkit
 
 Toolkit for Progressive Enhancement and Responsive Web Design
+
+- susy: gem install susy
+
+Responsive grids for Compass.
+
+- respond-to: gem install respond-to
+
+You've always wanted a nice, natural language way to name and remember your breakpoints, and now you can have it! Introducing Respond-to, a compass extension giving you the power of a Variable Driven respond-to mixin for you to use in your projects now!
