@@ -127,9 +127,3 @@ header, footer, .main {
     }
   }
 }
-
-footer {
-  @include at-breakpoint($breakpoint_1) {
-    clear: both;
-  }
-}
