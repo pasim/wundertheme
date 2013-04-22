@@ -3,3 +3,13 @@
  *
  * All general variables should be set here.
  */
+// We use these to control text direction settings
+$text-direction: ltr !default; // Controls default global text direction, 'rtl' or 'ltr'
+$default-float: left !default;
+$opposite-direction: right !default;
+
+$global-radius: 5px;
+$global-rounded: $global-radius;
+
+// We use these to control inset shadow shiny edges and depressions.
+$shiny-edge-size: 0 1px 0 !default;
