@@ -1,4 +1,3 @@
-
 FOLDER STRUCTURE
 ---------------------------------------------------------
 
@@ -55,9 +54,11 @@ WHEN THROWN IN TO THIS PROJECT ...
     variables
     base font settings
     
+GOING TO PRODUCTION
+---------------------------------------------------------
+If you are going to production with this theme run following command to minifie and clean up the css output
 
-
-
+compass compile -e production --force
 
 
 
