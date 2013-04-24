@@ -1,8 +1,10 @@
+# Require any additional compass plugins here.
 require 'susy'
 require 'toolkit'
 require 'respond-to'
-# Require any additional compass plugins here.
 
+# Output extra info for sourcemaps, now you see the scss info in the inspector.
+sass_options = { :debug_info => true }
 
 # Set this to the root of your project when deployed:
 http_path = "/sites/all/themes/wundertheme/"
