@@ -77,7 +77,7 @@
  * - Add HTML5 asesomenesssss
  * - Alter regions
  * - Remove id's
- * - 
+ * -
  */
 ?>
 <div class="page">
@@ -93,18 +93,18 @@
       <?php endif; ?>
 
       <?php if($site_name OR $site_slogan ): ?>
-        <hgroup class="site-name">
+        <div class="site-name-slogan">
           <?php if($site_name): ?>
             <?php if($is_front): ?>
-              <h1><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a></h1>
+              <h1 class="site-name"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a></h1>
             <?php else : ?>
-              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
+              <p class="site-name"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a></p>
             <?php endif; ?>
           <?php endif; ?>
           <?php if ($site_slogan): ?>
-            <h2><?php print $site_slogan; ?></h2>
+            <p class="slogan"><?php print $site_slogan; ?></p>
           <?php endif; ?>
-        </hgroup>
+        </div>
       <?php endif; ?>
 
       <?php if ($page['header']): ?>
@@ -123,7 +123,7 @@
       </div>
     </nav>
   <?php endif; ?>
-  
+
   <div class="container">
     <?php if ($page['sidebar_first']): ?>
       <aside role="complementary" class="sidebar sidebar_first">
